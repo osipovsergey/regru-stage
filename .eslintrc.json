@@ -1,0 +1,30 @@
+{
+    "extends": "@regru/regru",
+    "globals": {
+        "Site": true,
+        "JST": true,
+        "REGRU": true,
+        "lang": true,
+        "ru": true,
+        "en": true,
+        "static_prefix": true,
+        "_": true,
+        "Backbone": true,
+        "ga": true,
+        "t": true,
+        "t_or_undef": true,
+        "locale": true,
+        "stopEvent": true,
+        "punycode": true,
+        "glamor_confirm": true,
+        "glamor_alert": true,
+        "Modernizr": true,
+        "moment": true,
+        "confirmDialogPromise": true,
+        "confirmDialog": true,
+        "pm": true,
+        "getQueryParams": true,
+        "jsBehaveParams": true,
+        "Raven": true
+    }
+}
