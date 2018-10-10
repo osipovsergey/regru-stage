@@ -31,6 +31,8 @@
     height: 100%;
     margin-left: -300px;
     background-color: @bg-menu;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
 }
 
@@ -42,12 +44,16 @@
     height: 30px;
     padding: 4px;
     margin-left: 10px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
 
     & .b-button-navigation {
         position: absolute;
         width: 30px;
         border-radius: 2px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
 
         &__line-top {
@@ -76,54 +82,28 @@
     margin-left: 278px;
 
     & .b-button-navigation__line-top {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
+        -webkit-transform: rotate(45deg) translate(8px, 8px);
+        -ms-transform: rotate(45deg) translate(8px, 8px);
         transform: rotate(45deg) translate(8px, 8px);
     }
 
     & .b-button-navigation__line-middle {
         opacity: 0;
+        -webkit-transition: 0.1s ease-in;
+        -o-transition: 0.1s ease-in;
         transition: 0.1s ease-in;
     }
 
     & .b-button-navigation__line-bottom {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
+        -webkit-transform: rotate(-45deg) translate(8px, -7px);
+        -ms-transform: rotate(-45deg) translate(8px, -7px);
         transform: rotate(-45deg) translate(8px, -7px);
-    }
-}
-
-
-.b-menu-open {
-    margin-left: 0;
-    box-shadow: 15px 0 20px 0  @shadow-menu;
-}
-
-.b-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 86;
-    width: 250px;
-    height: 65px;
-    background-color: @bg-logo;
-
-    &__kappe {
-        position: absolute;
-        z-index: 88;
-        margin: 13px 87px;
-        color: rgb(54, 64, 72);
-        font-size: 42px;
-        font-family: "Anaheim-Regular";
-        line-height: 0.6;
-    }
-
-    &__forcreatives {
-        position: absolute;
-        z-index: 89;
-        width: 76px;
-        height: 16px;
-        margin: 42px 109px;
-        background-image: url("../img/for-creatives.png");
-        background-repeat: no-repeat;
     }
 }
 
@@ -286,7 +266,7 @@ li a.activeLink {
     &__line {
         position: absolute;
         left: 0;
-        width: 300px;
+        width: 250px;
         height: 1px;
         z-index: 46;
         background-color: @bg-social-icons-line;
@@ -479,9 +459,12 @@ li a.activeLink {
 .b-portfolio {
 
     &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         max-width: 100%;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
         ul:nth-child(1) li:nth-child(2n+1) {
@@ -497,12 +480,17 @@ li a.activeLink {
         }
 
         ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 
             li {
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
                 flex-grow: 1;
-                width: 405px;
+                width: 360px;
                 max-width: 100vw;
                 height: 311px;
                 list-style: none;
@@ -531,6 +519,8 @@ li a.activeLink {
     height: 100%;
     background: @bg-portfolio-mask;
     opacity: 0;
+    -webkit-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
     transition: 0.4s ease-out;
 
     &__title_big {
@@ -590,4 +580,3 @@ li a.activeLink {
         background-repeat: no-repeat;
     }
 }
-
