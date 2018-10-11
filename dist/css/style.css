@@ -15,6 +15,10 @@
 *:after {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 .b-home {
   left: 0;
   margin: 0;
@@ -250,7 +254,7 @@ li a.activeLink {
 }
 .b-social-icons {
   position: absolute;
-  top: 480px;
+  top: 470px;
   width: 250px;
   height: 50px;
 }
@@ -264,7 +268,7 @@ li a.activeLink {
 }
 .b-social-icon {
   position: absolute;
-  top: 25px;
+  top: 20px;
   width: 24px;
   height: 24px;
 }
@@ -306,14 +310,14 @@ li a.activeLink {
 .b-title-rights-reserved {
   position: relative;
   left: 30px;
-  top: 110px;
+  top: 90px;
   font-size: 12px;
   font-family: "Roboto-Thin";
   color: #6b7072;
 }
 .b-shadow {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 300px;
   width: 51px;
@@ -427,12 +431,12 @@ li a.activeLink {
   flex-wrap: wrap;
 }
 .b-portfolio__wrapper ul:nth-child(1) li:nth-child(2n+1) {
-  background-image: url("../img/layer-light-portfolio.png");
+  background: url("../img/layer-light-portfolio.png") center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .b-portfolio__wrapper ul:nth-child(1) li:nth-child(2n) {
-  background-image: url("../img/layer-dark-portfolio.png");
+  background: url("../img/layer-dark-portfolio.png") center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -442,7 +446,7 @@ li a.activeLink {
 }
 .b-portfolio__wrapper ul li {
   flex-grow: 1;
-  width: 360px;
+  width: 320px;
   max-width: 100vw;
   height: 311px;
   list-style: none;
