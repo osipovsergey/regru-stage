@@ -26,4 +26,5 @@ $( document ).ready( function() {
         $( this ).toggleClass('b-button-open');
         $menuWrap.toggleClass('b-menu-open');
     } );
+
 } );
