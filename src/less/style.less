@@ -1,13 +1,16 @@
 @import 'i-less/i-less';
 @import 'i-variables/i-variables';
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -19,10 +22,23 @@ html, body {
         max-width: 1920px;
         height: 100%;
         background-image: url("../img/bg.png");
-        -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+        -webkit-background-size: cover;
         background-size: cover;
+
+        @media screen and (max-width: 479px) {
+            max-width: 480px;
+            height: 100vh;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            height: 100vh;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            height: 100vh;
+        }
     }
 }
 
@@ -35,9 +51,18 @@ html, body {
     height: 100%;
     margin-left: -300px;
     background-color: @bg-menu;
-    -webkit-transition: 0.25s;
     -o-transition: 0.25s;
+    -webkit-transition: 0.25s;
     transition: 0.25s;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: fixed;
+        overflow: auto;
+        width: 300px;
+        height: 1px;
+        min-height: 100%;
+        margin-left: 0;
+    }
 }
 
 .b-toggle-button {
@@ -48,16 +73,24 @@ html, body {
     height: 30px;
     padding: 4px;
     margin-left: 10px;
-    -webkit-transition: 0.25s;
     -o-transition: 0.25s;
+    -webkit-transition: 0.25s;
     transition: 0.25s;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        display: none;
+    }
 
     & .b-button-navigation {
         position: absolute;
         width: 30px;
         border-radius: 2px;
-        -webkit-transition: 0.5s;
         -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
         transition: 0.5s;
 
         &__line-top {
@@ -86,31 +119,30 @@ html, body {
     margin-left: 278px;
 
     & .b-button-navigation__line-top {
-        -webkit-transition: 0.5s;
         -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
         transition: 0.5s;
-        -webkit-transform: rotate(45deg) translate(8px, 8px);
         -ms-transform: rotate(45deg) translate(8px, 8px);
+        -webkit-transform: rotate(45deg) translate(8px, 8px);
         transform: rotate(45deg) translate(8px, 8px);
     }
 
     & .b-button-navigation__line-middle {
         opacity: 0;
-        -webkit-transition: 0.1s ease-in;
         -o-transition: 0.1s ease-in;
+        -webkit-transition: 0.1s ease-in;
         transition: 0.1s ease-in;
     }
 
     & .b-button-navigation__line-bottom {
-        -webkit-transition: 0.5s;
         -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
         transition: 0.5s;
-        -webkit-transform: rotate(-45deg) translate(8px, -7px);
         -ms-transform: rotate(-45deg) translate(8px, -7px);
+        -webkit-transform: rotate(-45deg) translate(8px, -7px);
         transform: rotate(-45deg) translate(8px, -7px);
     }
 }
-
 
 .b-menu-open {
     margin-left: 0;
@@ -127,6 +159,17 @@ html, body {
     height: 65px;
     background-color: @bg-logo;
 
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: fixed;
+        width: 300px;
+        height: 75px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 300px;
+        height: 125px;
+    }
+
     &__kappe {
         position: absolute;
         z-index: 88;
@@ -135,6 +178,18 @@ html, body {
         font-size: 42px;
         font-family: "Anaheim-Regular";
         line-height: 0.6;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            margin: 2px 105px;
+            font-size: 53px;
+            line-height: 1;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            margin: 18px 98px;
+            font-size: 59px;
+            line-height: 1.2;
+        }
     }
 
     &__forcreatives {
@@ -145,6 +200,14 @@ html, body {
         margin: 42px 109px;
         background-image: url("../img/for-creatives.png");
         background-repeat: no-repeat;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            margin: 53px 143px;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            margin: 83px 145px;
+        }
     }
 }
 
@@ -152,6 +215,18 @@ html, body {
     position: relative;
     top: 49px;
     height: 215px;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: fixed;
+        top: 75px;
+        height: 292px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: fixed;
+        top: 125px;
+        height: 372px;
+    }
 }
 
 .b-line-navigation-1,
@@ -159,36 +234,86 @@ html, body {
 .b-line-navigation-3,
 .b-line-navigation-4,
 .b-line-navigation-5 {
-  position: absolute;
-  left: 0;
-  height: 1px;
-  background-color: @color-line-navigation;
-  opacity: 0.102;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: @color-line-navigation;
+    opacity: 0.102;
 }
 
 .b-line-navigation-1_top {
-   top: @topLineNavigation_1_small;
-   width: @widthLineNavigation_small;
+    top: @topLineNavigation_1_small;
+    width: @widthLineNavigation_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLineNavigation_1_normal;
+        width: @widthLineNavigation_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLineNavigation_1_big;
+        width: @widthLineNavigation_normal;
+    }
 }
 
 .b-line-navigation-2_top {
-   top: @topLineNavigation_2_small;
-   width: @widthLineNavigation_small;
+    top: @topLineNavigation_2_small;
+    width: @widthLineNavigation_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLineNavigation_2_normal;
+        width: @widthLineNavigation_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLineNavigation_2_big;
+        width: @widthLineNavigation_normal;
+    }
 }
 
 .b-line-navigation-3_top {
-   top: @topLineNavigation_3_small;
-   width: @widthLineNavigation_small;
+    top: @topLineNavigation_3_small;
+    width: @widthLineNavigation_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLineNavigation_3_normal;
+        width: @widthLineNavigation_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLineNavigation_3_big;
+        width: @widthLineNavigation_normal;
+    }
 }
 
 .b-line-navigation-4_top {
-   top: @topLineNavigation_4_small;
-   width: @widthLineNavigation_small;
+    top: @topLineNavigation_4_small;
+    width: @widthLineNavigation_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLineNavigation_4_normal;
+        width: @widthLineNavigation_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLineNavigation_4_big;
+        width: @widthLineNavigation_normal;
+    }
 }
 
 .b-line-navigation-5_top {
-   top: @topLineNavigation_5_small;
-   width: @widthLineNavigation_small;
+    top: @topLineNavigation_5_small;
+    width: @widthLineNavigation_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLineNavigation_5_normal;
+        width: @widthLineNavigation_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLineNavigation_5_big;
+        width: @widthLineNavigation_normal;
+    }
 }
 
 .b-link-home,
@@ -203,44 +328,111 @@ html, body {
     height: @heightLink_small;
     background-image: url("../img/bg-block-navigation.png");
 
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: @widthLink_normal;
+        height: @heightLink_normal;
+        background-color: @bg-link;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: @widthLink_normal;
+        height: @heightLink_big;
+        background-color: @bg-link;
+    }
+
     &__title {
         p {
            position: absolute;
             right: 40px;
+            color: @color-link-title;
             font-size: 18px;
             font-family: "Roboto-Light";
-            color: @color-link-title;
             line-height: 0;
             text-align: right;
             text-transform: uppercase;
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+            @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+                line-height: 0.4;
+            }
+
+            @media only screen and (min-width: 1824px) {
+                line-height: 1.7;
+            }
         }
     }
 }
 
-
 .b-link-home_size {
     top: @topLinkHome_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkHome_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkHome_big;
+    }
 }
 
 .b-link-work_size {
     top: @topLinkWork_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkWork_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkWork_big;
+    }
 }
 
 .b-link-about_size {
     top: @topLinkAbout_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkAbout_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkAbout_big;
+    }
 }
 
 .b-link-blog_size {
     top: @topLinkBlog_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkBlog_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkBlog_big;
+    }
 }
 
 .b-link-services_size {
     top: @topLinkServices_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkServices_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkServices_big;
+    }
 }
 
 .b-link-contact_size {
     top: @topLinkContact_small;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: @topLinkContact_normal;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: @topLinkContact_big;
+    }
 }
 
 li a.activeLink {
@@ -253,13 +445,24 @@ li a.activeLink {
     width: 250px;
     height: 200px;
 
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: 316px;
+        width: 300px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: fixed;
+        top: 498px;
+        width: 300px;
+    }
+
     &__title {
         position: absolute;
         top: 25px;
         right: 67px;
+        color: rgb(26, 181, 179);
         font-size: 19px;
         font-family: "Roboto-Thin";
-        color: rgb(26, 181, 179);
         line-height: 0;
         text-align: right;
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -279,12 +482,20 @@ li a.activeLink {
         position: absolute;
         top: 35px;
         right: 40px;
+        color: @color-filter-items;
         font-size: 13px;
         font-family: "Roboto-Light";
-        color: @color-filter-items;
         line-height: 0.8;
         text-align: right;
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            line-height: 1;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            line-height: 1;
+        }
     }
 
     &__line {
@@ -295,6 +506,14 @@ li a.activeLink {
         background-color: @bg-filter-line;
         background-repeat: no-repeat round;
         opacity: 0.1;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            width: @widthFilterLine_normal;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            width: @widthFilterLine_normal;
+        }
     }
 }
 
@@ -304,13 +523,32 @@ li a.activeLink {
     width: 250px;
     height: 50px;
 
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: 525px;
+        width: 300px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: fixed;
+        top: 710px;
+        width: 300px;
+    }
+
     &__line {
         position: absolute;
         left: 0;
+        z-index: 46;
         width: 250px;
         height: 1px;
-        z-index: 46;
         background-color: @bg-social-icons-line;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            width: 300px;
+        }
     }
 }
 
@@ -363,14 +601,25 @@ li a.activeLink {
     }
 }
 
-
 .b-title-rights-reserved {
     position: relative;
-    left: 30px;
     top: 90px;
+    left: 30px;
+    color: @color-title-rights-reserved;
     font-size: 12px;
     font-family: "Roboto-Thin";
-    color: @color-title-rights-reserved;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: fixed;
+        top: 585px;
+        left: 80px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: fixed;
+        top: 770px;
+        left: 80px;
+    }
 }
 
 .b-shadow {
@@ -378,12 +627,20 @@ li a.activeLink {
     position: fixed;
     top: 0;
     left: 300px;
+    z-index: 1;
     width: 51px;
     height: 100%;
     min-height: 1080px;
     background-image: url("../img/shadow.png");
     opacity: 0.6;
-    z-index: 1;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        display: block;
+    }
 }
 
 .b-quick-contact-info {
@@ -394,6 +651,11 @@ li a.activeLink {
     height: 45px;
     background-color: @bg-quick-contact-info;
     opacity: 0.9;
+
+    @media only screen and (min-width: 1824px) {
+        width: 90px;
+        height: 90px;
+    }
 
     &__logo {
         position: fixed;
@@ -409,6 +671,13 @@ li a.activeLink {
         border-color: @border-color-logo-ellipse;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0);
+
+        @media only screen and (min-width: 1824px) {
+            top: 12px;
+            right: 12px;
+            width: 63px;
+            height: 63px;
+        }
     }
 
     &__logo-icon {
@@ -417,18 +686,43 @@ li a.activeLink {
         width: 25px;
         height: 25px;
         background-image: url("../img/icon-quick-contact-info.png");
+
+        @media only screen and (min-width: 1824px) {
+            top: 30px;
+            right: 30px;
+            width: 25px;
+            height: 25px;
+        }
     }
 }
 
 .b-information-tip {
-  display: none;
-  position: fixed;
-  top: 45px;
-  right: 0;
-  width: 270px;
-  height: 130px;
-  background-color: @bg-information-tip;
-  opacity: 0.7;
+    display: none;
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: 270px;
+    height: 130px;
+    background-color: @bg-information-tip;
+    opacity: 0.7;
+
+    @media only screen and (min-width: 1824px) {
+        top: 90px;
+        width: 283px;
+        height: 130px;
+    }
+}
+
+.b-quick-contact-info:hover + .b-information-tip {
+    display: none;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        display: block;
+    }
 }
 
 .b-info {
@@ -462,7 +756,7 @@ li a.activeLink {
 
     &__email {
         position: absolute;
-        top: 54px;;
+        top: 54px;
         left: 18px;
         width: 20px;
         height: 17px;
@@ -498,26 +792,43 @@ li a.activeLink {
 }
 
 .b-portfolio {
+    @media screen and (max-width: 479px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        margin-left: 300px;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        margin-left: 300px;
+    }
 
     &__wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         position: relative;
-        max-width: 100%;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        max-width: 100%;
 
-        ul:nth-child(1) li:nth-child(2n+1) {
-            background: url("../img/layer-light-portfolio.png") center center;
-            background-size: cover;
-            background-repeat: no-repeat;
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            max-width: 100vw;
         }
 
-        ul:nth-child(1) li:nth-child(2n) {
-            background: url("../img/layer-dark-portfolio.png") center center;
-            background-size: cover;
-            background-repeat: no-repeat;
+        @media only screen and (min-width: 1824px) {
+            max-width: 100vw;
         }
 
         ul {
@@ -528,41 +839,94 @@ li a.activeLink {
             flex-wrap: wrap;
 
             li {
-                -webkit-box-flex: 1;
+                position: relative;
                 -ms-flex-positive: 1;
                 flex-grow: 1;
                 width: 320px;
                 max-width: 100vw;
                 height: 311px;
                 list-style: none;
+                -webkit-box-flex: 1;
 
                 &:hover .b-portfolio-mask {
                     opacity: 0.9;
+                }
+
+                @media screen and (max-width: 479px) {
+                    max-width: 100%;
+                }
+
+                @media screen and (min-width: 480px) and (max-width: 767px) {
+                    width: 50vw;
+                    max-width: 100vw;
+                    height: 280px;
+                }
+
+                @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+                    height: 218px;
+                }
+
+                @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+                    height: 255px;
+                }
+
+                @media screen and (max-device-width: 736px) and (min-device-width: 736px) {
+                    height: 282px;
+                }
+
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                    width: 50vw;
+                    max-width: 100vw;
+                    height: 294px;
+                }
+
+                @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+                    width: 340px;
+                    height: 270px;
+                }
+
+                @media only screen and (min-width: 1824px) {
+                    width: 405px;
+                    height: 311px;
                 }
             }
         }
     }
 
     &__items {
-        margin: 0 auto;
         padding: 0;
+        margin: 0 auto;
+    }
+
+    &__item-image {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }
 
 .b-portfolio-mask {
     display: block;
-    position: relative;
-    top: inherit;
-    right: inherit;
-    bottom: inherit;
-    left: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: @bg-portfolio-mask;
     opacity: 0;
-    -webkit-transition: 0.4s ease-out;
     -o-transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
     transition: 0.4s ease-out;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        height: 100%;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        height: 100%;
+    }
 
     &__title_big {
         position: absolute;
@@ -574,6 +938,27 @@ li a.activeLink {
         font-family: "Roboto-Light";
         line-height: 1.25;
         text-align: center;
+
+        @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+            top: 17%;
+            left: 21%;
+        }
+
+        @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+            left: 25%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 35%;
+        }
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            left: 26%;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            left: 30%;
+        }
     }
 
     &__title_small {
@@ -586,6 +971,27 @@ li a.activeLink {
         font-family: "Roboto-Light";
         line-height: 2.5;
         text-align: center;
+
+        @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+            top: 25%;
+            left: 32%;
+        }
+
+        @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+            left: 34%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 41%;
+        }
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            left: 35%;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            left: 38%;
+        }
    }
 
     &__line {
@@ -596,6 +1002,27 @@ li a.activeLink {
         height: 1px;
         background-image: url("../img/layer-hover-elements.png");
         background-repeat: no-repeat;
+
+        @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+            top: 41%;
+            left: 32%;
+        }
+
+        @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+            left: 34%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 41%;
+        }
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            left: 35%;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            left: 38%;
+        }
     }
 
     &__logo-ellipse {
@@ -609,6 +1036,27 @@ li a.activeLink {
         border-color: @border-color-logo-ellipse;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0);
+
+        @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+            top: 48%;
+            left: 39%;
+        }
+
+        @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+            left: 41%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 46%;
+        }
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            left: 42%;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            left: 44%;
+        }
     }
 
     &__logo-icon {
@@ -619,5 +1067,26 @@ li a.activeLink {
         height: 16px;
         background-image: url("../img/icon-hover-elements.png");
         background-repeat: no-repeat;
+
+        @media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+            top: 58%;
+            left: 48%;
+        }
+
+        @media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+            left: 48%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 51%;
+        }
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            left: 49%;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            left: 50%;
+        }
     }
 }
