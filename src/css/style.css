@@ -36,18 +36,18 @@ body {
   background-image: url("../img/bg.png");
   background-size: cover;
 }
-@media screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .b-home__background {
     max-width: 480px;
     height: 100vh;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .b-home__background {
     height: 100vh;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .b-home__background {
     height: 100vh;
   }
@@ -866,18 +866,18 @@ body {
 .b-information-tip-open {
   display: block;
 }
-@media screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .b-portfolio {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .b-portfolio {
     width: 100vw;
     max-width: 100vw;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .b-portfolio {
     width: 100vw;
     max-width: 100vw;
@@ -925,34 +925,34 @@ body {
 .b-portfolio__wrapper ul li:hover .b-portfolio-mask {
   opacity: 0.9;
 }
-@media screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .b-portfolio__wrapper ul li {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .b-portfolio__wrapper ul li {
     width: 50vw;
     max-width: 100vw;
     height: 280px;
   }
 }
-@media screen and (max-device-width: 568px) and (min-device-width: 568px) {
+@media only screen and (max-width: 568px) and (min-width: 568px) {
   .b-portfolio__wrapper ul li {
     height: 218px;
   }
 }
-@media screen and (max-device-width: 667px) and (min-device-width: 667px) {
+@media only screen and (max-width: 667px) and (min-width: 667px) {
   .b-portfolio__wrapper ul li {
     height: 255px;
   }
 }
-@media screen and (max-device-width: 736px) and (min-device-width: 736px) {
+@media only screen and (max-width: 736px) and (min-width: 736px) {
   .b-portfolio__wrapper ul li {
     height: 282px;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .b-portfolio__wrapper ul li {
     width: 50vw;
     max-width: 100vw;
