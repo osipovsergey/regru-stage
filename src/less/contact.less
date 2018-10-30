@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .b-contact {
     left: 0;
     margin: 0;
@@ -551,10 +555,6 @@ body {
         li a.activeLink {
             color: @color-filter-item-active;
         }
-
-        a {
-            text-decoration: none;
-        }
     }
 
     &__line {
@@ -702,6 +702,20 @@ body {
     left: 14%;
     width: 75%;
     background-image: url("../img/bg-connect-with-us.png");
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        top: 0;
+        left: 300px;
+        width: 40%;
+        margin: 2% 0 0 2%;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        top: 0;
+        left: 300px;
+        width: 30%;
+        margin: 2% 0 0 2%;
+    }
 }
 
 .b-connect-with-us-text {
@@ -728,7 +742,7 @@ body {
 .b-horizontal-line {
     position: relative;
     height: 1px;
-    margin: 5% 0;
+    margin: 3% 0;
     background-image: url("../img/horizontal-line-connect-with-us.png");
     opacity: 0.102;
 }
@@ -737,10 +751,10 @@ body {
     position: relative;
     width: 90%;
     height: 100%;
-    margin: 0 5% 5% 5%;
+    margin: 0 5% 3% 5%;
 
     &__title {
-        margin: 0 0 5% 0;
+        margin: 0 0 3% 0;
         color: @color-title-send-message;
         font-size: 15px;
         font-family: "Roboto-Light";
@@ -752,11 +766,35 @@ input {
     outline: none;
 }
 
+form {
+    position: relative;
+}
+
 .b-form-name {
     position: relative;
     width: 100%;
     height: 37px;
     margin: 0 0 5% 0;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
 }
 
 .b-form-name input.b-form-name-input {
@@ -812,6 +850,26 @@ input {
     width: 100%;
     height: 37px;
     margin: 0 0 5% 0;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
 }
 
 .b-form-email input.b-form-email-input {
@@ -867,6 +925,26 @@ input {
     width: 100%;
     height: 37px;
     margin: 0 0 5% 0;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 47%;
+        margin: 0 0 3% 0;
+    }
 }
 
 .b-form-website input.b-form-website-input {
@@ -920,13 +998,59 @@ input {
 .b-form-message {
     position: relative;
     width: 100%;
-    height: 70px;
+    height: 63%;
     margin: 0 0 5% 0;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        width: 50%;
+        margin: 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 50%;
+        margin: 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: 50%;
+        margin: 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+form .b-form-message {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 textarea.b-form-message-textarea {
     width: 100%;
-    height: 70px;
+    height: 100%;
     overflow: auto;
     padding: 5%;
     outline: none;
@@ -944,6 +1068,48 @@ textarea.b-form-message-textarea {
     position: relative;
     width: 100%;
     height: 37px;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        width: 50%;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        width: 50%;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        width: 50%;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        width: 50%;
+    }
+}
+
+form .b-form-submit {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 .b-form-submit-button {
