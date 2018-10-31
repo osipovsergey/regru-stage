@@ -607,6 +607,9 @@ a {
   line-height: 1.6;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
+.b-filter-item-active {
+  color: #ffffff;
+}
 .b-social-icons {
   position: absolute;
   top: 470px;
