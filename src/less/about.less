@@ -14,10 +14,6 @@ body {
     height: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
 .b-about {
     left: 0;
     margin: 0;
@@ -30,16 +26,16 @@ a {
         -webkit-background-size: cover;
         background-size: cover;
 
-        @media screen and (max-width: 479px) {
+        @media only screen and (max-width: 479px) {
             max-width: 480px;
             height: 100vh;
         }
 
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
             height: 100vh;
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
             height: 100vh;
         }
     }
@@ -563,6 +559,10 @@ a {
         li a.activeLink {
             color: @color-filter-item-active;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &__line {
@@ -721,7 +721,7 @@ a {
         background-color: @bg-about-us;
 
         @media only screen and (min-width: 1224px) and (max-width: 1823px) {
-            margin: 1%;
+            margin: 2% 1% 1% 1%;
         }
 
         @media only screen and (min-width: 1824px) {
