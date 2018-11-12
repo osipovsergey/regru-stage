@@ -36,18 +36,12 @@ body {
   background-image: url("../img/bg.png");
   background-size: cover;
 }
-@media screen and (max-width: 479px) {
-  .b-about__background {
-    max-width: 480px;
-    height: 100vh;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .b-about__background {
     height: 100vh;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .b-about__background {
     height: 100vh;
   }
@@ -155,6 +149,11 @@ body {
   width: 250px;
   height: 65px;
   background-color: #ffffff;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-logo {
@@ -612,6 +611,9 @@ body {
   line-height: 1.6;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
+.b-filter-item-active {
+  color: #ffffff;
+}
 .b-social-icons {
   position: absolute;
   top: 470px;
@@ -713,20 +715,18 @@ body {
   }
 }
 .b-about-us {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  position: absolute;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-about-us {
-    position: absolute;
     left: 300px;
+    height: 95.7vh;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-about-us {
-    position: absolute;
     left: 300px;
+    height: 96.4vh;
   }
 }
 .b-about-us__background {
@@ -741,22 +741,48 @@ body {
 }
 @media only screen and (min-width: 1824px) {
   .b-about-us__background {
-    margin: 2%;
+    margin: 1%;
+  }
+}
+.b-about-us__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-content {
+    padding: 4%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-content {
+    padding: 4%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-sidebar-left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-sidebar-left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
   }
 }
 .b-who-we-are {
   width: 100%;
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-who-we-are {
-    position: relative;
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .b-who-we-are {
-    width: 50%;
-  }
 }
 .b-who-we-are__title {
   z-index: 62;
@@ -768,12 +794,12 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-who-we-are__title {
-    margin: 0 4%;
+    margin: 2% 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-who-we-are__title {
-    margin: 0 4%;
+    margin-left: 0;
   }
 }
 .b-who-we-are__description {
@@ -786,16 +812,19 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-who-we-are__description {
-    width: 98%;
-    margin: 0 0 0 4%;
-    font-size: 16px;
-    line-height: 1.2;
+    width: 100%;
+    margin: 0;
+    font-size: 1.9vmin;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-who-we-are__description {
-    width: 100%;
-    margin: 0 0 0 4%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-who-we-are__description p {
+    margin: 2% 0;
   }
 }
 .b-main-image-who-we-are {
@@ -803,13 +832,7 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-main-image-who-we-are {
-    width: 99%;
-    margin: 32px 20px;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .b-main-image-who-we-are {
-    margin: 32px;
+    height: 25vh;
   }
 }
 .b-horizontal-line {
@@ -821,19 +844,13 @@ body {
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-horizontal-line {
     width: 100%;
-    margin: 0 0 0 4%;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-horizontal-line {
     width: 100%;
-    margin: 0 0 0 4%;
-  }
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-our-staff {
-    position: relative;
-    width: 54%;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -853,29 +870,20 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-our-staff__title {
-    margin-left: 4%;
+    margin: 2% 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-our-staff__title {
-    margin: 4% 0 0 4%;
+    margin: 2% 0;
   }
 }
 .b-photos-staff {
   display: flex;
   position: relative;
-  left: -20px;
-  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-photos-staff {
-    left: 1%;
-    width: 98%;
-    padding: 0%;
-  }
 }
 .b-photos-staff li {
   position: relative;
@@ -951,45 +959,44 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-vertical-line {
-    position: absolute;
-    top: 32px;
-    left: 54%;
+    position: relative;
     z-index: 5;
     width: 1px;
     height: 100%;
+    margin-top: 2%;
     background-image: url("../img/vertical-line-about-us.png");
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-vertical-line {
-    position: absolute;
-    top: 32px;
-    left: 54%;
+    position: relative;
     z-index: 5;
     width: 1px;
     height: 100%;
+    margin-top: 2%;
     background-image: url("../img/vertical-line-about-us.png");
+  }
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
   }
 }
 .b-our-skills {
   width: 100%;
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-our-skills {
-    position: absolute;
-    left: 54%;
-    width: 44%;
-    margin: 28px 12px;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .b-our-skills {
-    position: absolute;
-    top: 0;
-    left: 54%;
-    width: 44%;
-    margin: 29px 0 0 15px;
-  }
 }
 .b-our-skills__title {
   z-index: 22;
@@ -1001,33 +1008,29 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-our-skills__title {
-    margin: 0 13px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-our-skills__title {
-    margin: 0 15px;
+    margin: 0;
   }
 }
 .b-our-skill__web-design {
   position: relative;
   width: 100%;
-  height: 80px;
 }
 .b-our-skill__web-deveploment {
   position: relative;
   width: 100%;
-  height: 80px;
 }
 .b-our-skill__plugins {
   position: relative;
   width: 100%;
-  height: 80px;
 }
 .b-our-skill__front-end {
   position: relative;
   width: 100%;
-  height: 100px;
 }
 .b-our-skill__inscription {
   width: 100%;
@@ -1042,7 +1045,17 @@ body {
   color: #727272;
   font-size: 15px;
   font-family: "Roboto-Light";
-  line-height: 1.7;
+  line-height: 1;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__inscription-title {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__inscription-title {
+    margin-left: 0;
+  }
 }
 .b-our-skill__inscription-indicator {
   position: absolute;
@@ -1051,91 +1064,165 @@ body {
   color: #000000;
   font-size: 14px;
   font-family: "Roboto-light";
-  line-height: 1.8;
+  line-height: 1;
   text-align: right;
 }
 .b-our-skill__web-design-graph-border {
   z-index: 25;
-  height: 40px;
+  height: 3vh;
   margin: 5px 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #ececec;
   background-color: #ffffff;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__web-design-graph-border {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__web-design-graph-border {
+    margin: 0;
+  }
 }
 .b-our-skill__web-design-graph-rectangle {
   position: absolute;
   z-index: 26;
   width: 83%;
-  height: 38px;
+  height: 2.7vh;
   background-color: #e2e2e2;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__web-design-graph-rectangle {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__web-design-graph-rectangle {
+    margin: 0;
+  }
 }
 .b-our-skill__web-deveploment-graph-border {
   z-index: 25;
-  height: 40px;
+  height: 3vh;
   margin: 5px 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #ececec;
   background-color: #ffffff;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__web-deveploment-graph-border {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__web-deveploment-graph-border {
+    margin: 0;
+  }
 }
 .b-our-skill__web-deveploment-graph-rectangle {
   position: absolute;
   z-index: 26;
   width: 87%;
-  height: 38px;
+  height: 2.7vh;
   background-color: #e2e2e2;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__web-deveploment-graph-rectangle {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__web-deveploment-graph-rectangle {
+    margin: 0;
+  }
 }
 .b-our-skill__plugins-graph-border {
   z-index: 25;
-  height: 40px;
+  height: 3vh;
   margin: 5px 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #ececec;
   background-color: #ffffff;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__plugins-graph-border {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__plugins-graph-border {
+    margin: 0;
+  }
 }
 .b-our-skill__plugins-graph-rectangle {
   position: absolute;
   z-index: 26;
   width: 79%;
-  height: 38px;
+  height: 2.7vh;
   background-color: #e2e2e2;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__plugins-graph-rectangle {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__plugins-graph-rectangle {
+    margin: 0;
+  }
 }
 .b-our-skill__front-end-graph-border {
   z-index: 25;
-  height: 40px;
+  height: 3vh;
   margin: 5px 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #ececec;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__front-end-graph-border {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__front-end-graph-border {
+    margin: 0;
+  }
+}
 .b-our-skill__front-end-graph-rectangle {
   position: absolute;
   z-index: 26;
   width: 70%;
-  height: 38px;
+  height: 2.7vh;
   background-color: #e2e2e2;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-our-skill__front-end-graph-rectangle {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-our-skill__front-end-graph-rectangle {
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-testimonials {
     display: block;
-    position: absolute;
-    top: 375px;
-    left: 54%;
-    width: 43%;
-    height: 25%;
+    position: relative;
     margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-testimonials {
-    position: absolute;
-    top: 35%;
-    left: 54%;
-    width: 45%;
-    margin: 0 15px;
+    display: block;
+    position: relative;
+    margin: 0;
   }
 }
 .b-testimonials__title {
@@ -1148,7 +1235,12 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-testimonials__title {
-    margin-left: 27px;
+    margin: 2% 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-testimonials__title {
+    margin-left: 0;
   }
 }
 .b-testimonials-border {
@@ -1161,14 +1253,12 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-testimonials-border {
-    position: absolute;
-    width: 96%;
-    margin: 0 0 0 27px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-testimonials-border {
-    width: 93%;
+    margin: 0;
   }
 }
 .b-testimonials-border__body {
@@ -1203,21 +1293,21 @@ body {
   text-align: left;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-testimonials-text {
+    font-size: 1.9vmin;
+  }
+}
+.b-services {
+  margin-bottom: 8%;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-services {
-    position: absolute;
-    top: 730px;
-    left: 54%;
-    height: 200px;
-    margin: 0 27px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-services {
-    position: absolute;
-    top: 61%;
-    left: 54%;
-    width: 45%;
-    margin: 0 15px;
+    margin: 0;
   }
 }
 .b-services__title {
@@ -1230,17 +1320,17 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-services__title {
-    margin: 0;
+    margin: 2% 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-services__title {
-    margin: 0 15px;
+    margin: 2% 0;
   }
 }
 .b-services-lists {
   z-index: 11;
-  margin-left: -7px;
+  margin-left: 15px;
   color: #848484;
   font-size: 14px;
   font-family: "Roboto-Light";
@@ -1249,6 +1339,12 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-services-lists {
-    margin-left: -25px;
+    margin-left: 0;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-services-lists {
+    margin-left: 0;
   }
 }
