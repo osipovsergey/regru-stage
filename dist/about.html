@@ -61,8 +61,8 @@
             <span class="b-filter__title">Filter</span>
             <div class="b-filter__icon"></div>
             <ul class="b-filter__items">
-                <li><a class="b-filter-item b-filter-item__All-Works" href="#">All Works</a></li>
-                <li><a class="b-filter-item b-filter-item__Web-Design"href="#">web design</a></li>
+                <li><a class="b-filter-item b-filter-item__All-Works b-filter-item-active" href="#">All Works</a></li>
+                <li><a class="b-filter-item b-filter-item__Web-Design" href="#">web design</a></li>
                 <li><a class="b-filter-item b-filter-item__Illustration" href="#">illustration</a></li>
                 <li><a class="b-filter-item b-filter-item__Photography" href="#">photography</a></li>
                 <li><a class="b-filter-item b-filter-item__Wallpapers" href="#">wallpapers</a></li>
@@ -87,143 +87,153 @@
 
     <!-- Основной контент -->
 
-    <main class="b-about-us b-about-us__background">
-        <div class="b-who-we-are">
-            <img class="b-main-image-who-we-are" src="../src/img/main-image-who-we-are.png" alt="img">
-            <p class="b-who-we-are__title">Who We Are</p>
-            <div class="b-who-we-are__description">
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                <p> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeosu dapibus condimentum sit amet a augue. condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-            </div>
+    <div class="b-about-us b-about-us__background">
+        <div class="b-about-us__wrapper">
+            <div class="b-sidebar-left">
+                <div class="b-content">
+                    <div class="b-who-we-are">
+                        <img class="b-main-image-who-we-are" src="../src/img/main-image-who-we-are.png" alt="img">
+                        <p class="b-who-we-are__title">Who We Are</p>
+                        <div class="b-who-we-are__description">
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                            <p> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeosu dapibus condimentum sit amet a augue. condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        </div>
 
-            <div class="b-horizontal-line"></div>
-        </div>
+                        <div class="b-horizontal-line"></div>
+                    </div>
 
-        <div class="b-our-staff">
-            <p class="b-our-staff__title">Our Staff</p>
-            <ul class="b-photos-staff">
-                <li>
-                    <img src="../src/img/photo-staff.png" alt="img">
-                    <div class="b-photo-staff-mask">
-                        <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
-                        <p class="b-photo-staff-mask__title_small">Web Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../src/img/photo-staff.png" alt="img">
-                    <div class="b-photo-staff-mask">
-                        <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
-                        <p class="b-photo-staff-mask__title_small">Web Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../src/img/photo-staff.png" alt="img">
-                    <div class="b-photo-staff-mask">
-                        <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
-                        <p class="b-photo-staff-mask__title_small">Web Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../src/img/photo-staff.png" alt="img">
-                    <div class="b-photo-staff-mask">
-                        <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
-                        <p class="b-photo-staff-mask__title_small">Web Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../src/img/photo-staff.png" alt="img">
-                    <div class="b-photo-staff-mask">
-                        <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
-                        <p class="b-photo-staff-mask__title_small">Web Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="b-photo-staff-you">
-                        <div class="b-photo-staff-you__rectangle">
-                            <p class="b-photo-staff-you__title">YOU</p>
+                    <div class="b-our-staff">
+                        <p class="b-our-staff__title">Our Staff</p>
+                        <div class="b-photos-staff">
+                            <li>
+                                <img src="../src/img/photo-staff.png" alt="img">
+                                <div class="b-photo-staff-mask">
+                                    <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
+                                    <p class="b-photo-staff-mask__title_small">Web Developer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../src/img/photo-staff.png" alt="img">
+                                <!-- <div class="b-photo-staff-mask">
+                                    <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
+                                    <p class="b-photo-staff-mask__title_small">Web Developer</p>
+                                </div> -->
+                            </li>
+                            <li>
+                                <img src="../src/img/photo-staff.png" alt="img">
+                                <!-- <div class="b-photo-staff-mask">
+                                    <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
+                                    <p class="b-photo-staff-mask__title_small">Web Developer</p>
+                                </div> -->
+                            </li>
+                            <li>
+                                <img src="../src/img/photo-staff.png" alt="img">
+                                <!-- <div class="b-photo-staff-mask">
+                                    <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
+                                    <p class="b-photo-staff-mask__title_small">Web Developer</p>
+                                </div> -->
+                            </li>
+                            <li>
+                                <img src="../src/img/photo-staff.png" alt="img">
+                                <!-- <div class="b-photo-staff-mask">
+                                    <p class="b-photo-staff-mask__title_big">JHON SMITH</p>
+                                    <p class="b-photo-staff-mask__title_small">Web Developer</p>
+                                </div> -->
+                            </li>
+                            <li>
+                                <div class="b-photo-staff-you">
+                                    <div class="b-photo-staff-you__rectangle">
+                                        <p class="b-photo-staff-you__title">YOU</p>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="b-vertical-line"></div>
-
-        <div class="b-our-skills">
-            <p class="b-our-skills__title">Our Skills</p>
-
-            <div class="b-our-skill__web-design">
-                <div class="b-our-skill__inscription">
-                    <p class="b-our-skill__inscription-title">Website Design</p>
-                    <p class="b-our-skill__inscription-indicator">89%</p>
                 </div>
-                <div class="b-our-skill__web-design-graph">
-                    <div class="b-our-skill__web-design-graph-border">
-                        <div class="b-our-skill__web-design-graph-rectangle"></div>
+            </div>
+
+            <div class="b-vertical-line"></div>
+
+            <div class="b-sidebar-right">
+                <div class="b-content">
+                    <div class="b-our-skills">
+                        <p class="b-our-skills__title">Our Skills</p>
+
+                        <div class="b-our-skill__web-design">
+                            <div class="b-our-skill__inscription">
+                                <p class="b-our-skill__inscription-title">Website Design</p>
+                                <p class="b-our-skill__inscription-indicator">89%</p>
+                            </div>
+                            <div class="b-our-skill__web-design-graph">
+                                <div class="b-our-skill__web-design-graph-border">
+                                    <div class="b-our-skill__web-design-graph-rectangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-our-skill__web-deveploment">
+                            <div class="b-our-skill__inscription">
+                                <p class="b-our-skill__inscription-title">Website Deveploment</p>
+                                <p class="b-our-skill__inscription-indicator">97%</p>
+                            </div>
+                            <div class="b-our-skill__web-deveploment-graph">
+                                <div class="b-our-skill__web-deveploment-graph-border">
+                                    <div class="b-our-skill__web-deveploment-graph-rectangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-our-skill__plugins">
+                            <div class="b-our-skill__inscription">
+                                <p class="b-our-skill__inscription-title">Plugins</p>
+                                <p class="b-our-skill__inscription-indicator">85%</p>
+                            </div>
+                            <div class="b-our-skill__plugins-graph">
+                                <div class="b-our-skill__plugins-graph-border">
+                                    <div class="b-our-skill__plugins-graph-rectangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-our-skill__front-end">
+                            <div class="b-our-skill__inscription">
+                                <p class="b-our-skill__inscription-title">Front end</p>
+                                <p class="b-our-skill__inscription-indicator">75%</p>
+                            </div>
+                            <div class="b-our-skill__front-end-graph">
+                                <div class="b-our-skill__front-end-graph-border">
+                                    <div class="b-our-skill__front-end-graph-rectangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-testimonials">
+                        <p class="b-testimonials__title">Testimonials</p>
+                        <div class="b-testimonials-border">
+                            <div class="b-testimonials-border__body">
+                                <img class="b-testimonials-border__body-photo" src="../src/img/photo-testimonials.png" alt="img">
+                                <p class="b-testimonials-border__body-title">Collis Ta`eed - CEO at Envato</p>
+                            </div>
+                            <p class="b-testimonials-text">Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                        </div>
+                    </div>
+
+                    <div class="b-services">
+                        <p class="b-services__title">Services</p>
+                        <div class="b-services-lists">
+                            <li>Web Design</li>
+                            <li>Photography</li>
+                            <li>Plugin Deveploment</li>
+                            <li>Front-end</li>
+                            <li>Design for Scratch</li>
+                            <li>Website Maintenance</li>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="b-our-skill__web-deveploment">
-                <div class="b-our-skill__inscription">
-                    <p class="b-our-skill__inscription-title">Website Deveploment</p>
-                    <p class="b-our-skill__inscription-indicator">97%</p>
-                </div>
-                <div class="b-our-skill__web-deveploment-graph">
-                    <div class="b-our-skill__web-deveploment-graph-border">
-                        <div class="b-our-skill__web-deveploment-graph-rectangle"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="b-our-skill__plugins">
-                <div class="b-our-skill__inscription">
-                    <p class="b-our-skill__inscription-title">Plugins</p>
-                    <p class="b-our-skill__inscription-indicator">85%</p>
-                </div>
-                <div class="b-our-skill__plugins-graph">
-                    <div class="b-our-skill__plugins-graph-border">
-                        <div class="b-our-skill__plugins-graph-rectangle"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="b-our-skill__front-end">
-                <div class="b-our-skill__inscription">
-                    <p class="b-our-skill__inscription-title">Front end</p>
-                    <p class="b-our-skill__inscription-indicator">75%</p>
-                </div>
-                <div class="b-our-skill__front-end-graph">
-                    <div class="b-our-skill__front-end-graph-border">
-                        <div class="b-our-skill__front-end-graph-rectangle"></div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div class="b-testimonials">
-            <p class="b-testimonials__title">Testimonials</p>
-            <div class="b-testimonials-border">
-                <div class="b-testimonials-border__body">
-                    <img class="b-testimonials-border__body-photo" src="../src/img/photo-testimonials.png" alt="img">
-                    <p class="b-testimonials-border__body-title">Collis Ta`eed - CEO at Envato</p>
-                </div>
-                <p class="b-testimonials-text">Sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-            </div>
-        </div>
-
-        <div class="b-services">
-            <p class="b-services__title">Services</p>
-            <ul class="b-services-lists">
-                <li>Web Design</li>
-                <li>Photography</li>
-                <li>Plugin Deveploment</li>
-                <li>Front-end</li>
-                <li>Design for Scratch</li>
-                <li>Website Maintenance</li>
-            </ul>
-        </div>
-    </main>
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="js/jquery.js"></script>
