@@ -752,32 +752,32 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-content {
-    padding: 4%;
     height: 100%;
+    padding: 4%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-content {
-    padding: 4%;
     height: 100%;
+    padding: 4%;
   }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-sidebar-left {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
     height: 100%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-sidebar-left {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 50%;
     height: 100%;
   }
 }
@@ -831,9 +831,9 @@ body {
   width: 100%;
 }
 .b-post__main-image img {
-  height: 100%;
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-post__main-image img {
@@ -898,38 +898,38 @@ body {
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-vertical-line {
     position: relative;
-    margin-top: 2%;
     z-index: 5;
     width: 1px;
     height: 100%;
+    margin-top: 2%;
     background-image: url("../img/vertical-line-post.png");
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-vertical-line {
     position: relative;
-    margin-top: 2%;
     z-index: 5;
     width: 1px;
     height: 100%;
+    margin-top: 2%;
     background-image: url("../img/vertical-line-post.png");
   }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-sidebar-right {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 50%;
     height: 100%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-sidebar-right {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 50%;
     height: 100%;
   }
 }
@@ -974,8 +974,8 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-profile__title {
-    line-height: 1;
     margin-left: 40px;
+    line-height: 1;
   }
 }
 .b-project-info-profile-logo-icon {
@@ -985,14 +985,14 @@ body {
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-profile-logo-icon {
     top: -8px;
+    left: 0;
     width: 6%;
-    left: 0px;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-project-info-profile-logo-icon {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 }
 .b-project-info-like {
@@ -1014,8 +1014,8 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-like__title {
-    line-height: 1;
     margin-left: 40px;
+    line-height: 1;
   }
 }
 .b-project-info-like-logo-icon {
@@ -1024,15 +1024,15 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-like-logo-icon {
-    width: 6%;
     top: -8px;
-    left: 0px;
+    left: 0;
+    width: 6%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-project-info-like-logo-icon {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 }
 .b-project-info-date {
@@ -1054,8 +1054,8 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-date__title {
-    line-height: 1;
     margin-left: 40px;
+    line-height: 1;
   }
 }
 .b-project-info-date-logo-icon {
@@ -1064,15 +1064,15 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-date-logo-icon {
-    width: 6%;
     top: -8px;
-    left: 0px;
+    left: 0;
+    width: 6%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-project-info-date-logo-icon {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 }
 .b-project-info-comment {
@@ -1094,8 +1094,8 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-comment__title {
-    line-height: 1;
     margin-left: 40px;
+    line-height: 1;
   }
 }
 .b-project-info-comment-logo-icon {
@@ -1104,15 +1104,15 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-info-comment-logo-icon {
-    width: 6%;
     top: -8px;
-    left: 0px;
+    left: 0;
+    width: 6%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-project-info-comment-logo-icon {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 }
 .b-horizontal-line-project-info {
@@ -1175,135 +1175,135 @@ body {
   }
 }
 .b-tag-web-design {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-web-design p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-web-design p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-tag-photography {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-photography p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-photography p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-tag-development {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-development p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-development p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-tag-php {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-php p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-php p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-tag-ecommerce {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-ecommerce p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-ecommerce p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-tag-graphic {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 11px;
   position: relative;
   margin: 0 2% 2% 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-radius: 11px;
 }
 .b-tag-graphic p {
+  margin: 10px;
+  color: #a3a3a3;
   font-size: 13px;
   font-family: "Roboto-Light";
-  color: #a3a3a3;
   line-height: 2;
-  margin: 10px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-tag-graphic p {
+    margin: 5px;
     font-size: 10px;
     line-height: 3;
-    margin: 5px;
   }
 }
 .b-project-gallery {
@@ -1351,9 +1351,9 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-gallery-photo {
-    margin: 0 1% 1% 0;
     width: 12%;
     height: 5%;
+    margin: 0 1% 1% 0;
   }
 }
 .b-project-features {
@@ -1391,10 +1391,10 @@ body {
 }
 .b-project-feature {
   position: relative;
+  margin-left: 15px;
   color: #848484;
   line-height: 1;
   list-style: url("../img/check-project-features.png");
-  margin-left: 15px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-project-feature {
