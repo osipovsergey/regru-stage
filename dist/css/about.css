@@ -232,8 +232,8 @@ body {
 }
 .b-logo__image-2 {
   position: relative;
-  left: 21px;
   top: 10px;
+  left: 21px;
   width: 20px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
@@ -252,8 +252,8 @@ body {
 }
 .b-logo__image-3 {
   position: relative;
-  left: 10px;
   top: 10px;
+  left: 10px;
   width: 20px;
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
@@ -576,8 +576,8 @@ body {
   position: absolute;
   top: 35px;
   right: 40px;
-  text-align: right;
   list-style: none;
+  text-align: right;
 }
 .b-filter__items li a.activeLink {
   color: #ffffff;
@@ -719,13 +719,19 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-about-us {
+    position: fixed;
     left: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 95.7vh;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-about-us {
+    position: fixed;
     left: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 96.4vh;
   }
 }
@@ -744,40 +750,43 @@ body {
     margin: 1%;
   }
 }
-.b-about-us__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-about-us__wrapper {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-about-us__wrapper {
+    display: flex;
+  }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-content {
-    padding: 4%;
     height: 100%;
+    padding: 4%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-content {
-    padding: 4%;
     height: 100%;
+    padding: 4%;
   }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-sidebar-left {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    width: 50%;
     height: 100%;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-sidebar-left {
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 50%;
     height: 100%;
   }
 }
@@ -832,7 +841,7 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-main-image-who-we-are {
-    height: 25vh;
+    height: 40vh;
   }
 }
 .b-horizontal-line {
@@ -851,13 +860,6 @@ body {
   .b-horizontal-line {
     width: 100%;
     margin: 0;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .b-our-staff {
-    top: 68%;
-    width: 53%;
-    height: 34%;
   }
 }
 .b-our-staff__title {
@@ -883,7 +885,19 @@ body {
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
   width: 100%;
+  margin-bottom: 2vh;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-photos-staff {
+    margin: 2% 0;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-photos-staff {
+    margin: 2% 0;
+  }
 }
 .b-photos-staff li {
   position: relative;
@@ -891,6 +905,30 @@ body {
   height: 180px;
   margin: 1%;
   list-style: none;
+}
+@media only screen and (min-width: 1224px) and (max-width: 1823px) {
+  .b-photos-staff li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30%;
+    height: 8vw;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .b-photos-staff li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30%;
+    height: 8vw;
+  }
 }
 .b-photos-staff li:hover .b-photo-staff-mask {
   opacity: 0.8;
@@ -910,24 +948,24 @@ body {
 }
 .b-photo-staff-mask__title_big {
   position: relative;
-  top: 40px;
+  top: 2vh;
   z-index: 51;
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   font-family: "Roboto-Bold";
-  line-height: 1.6;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 .b-photo-staff-mask__title_small {
   position: relative;
-  top: 25px;
+  top: 2vh;
   z-index: 52;
   color: #ffffff;
   font-size: 13px;
   font-family: "Roboto-Thin";
-  line-height: 2;
+  line-height: 1;
   text-align: center;
 }
 .b-photo-staff-you {
@@ -939,7 +977,7 @@ body {
 }
 .b-photo-staff-you__rectangle {
   position: relative;
-  top: 19%;
+  top: 22%;
   left: 32%;
   z-index: 45;
   width: 83px;
@@ -962,7 +1000,6 @@ body {
     position: relative;
     z-index: 5;
     width: 1px;
-    height: 100%;
     margin-top: 2%;
     background-image: url("../img/vertical-line-about-us.png");
   }
@@ -972,7 +1009,6 @@ body {
     position: relative;
     z-index: 5;
     width: 1px;
-    height: 100%;
     margin-top: 2%;
     background-image: url("../img/vertical-line-about-us.png");
   }
@@ -983,7 +1019,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
-    height: 100%;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -992,7 +1027,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
-    height: 100%;
   }
 }
 .b-our-skills {
@@ -1340,7 +1374,7 @@ body {
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-services-lists {
     margin-left: 0;
-    line-height: 1.2;
+    line-height: 1.6;
   }
 }
 @media only screen and (min-width: 1824px) {
