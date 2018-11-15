@@ -700,12 +700,18 @@ body {
     position: absolute;
 
     @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        position: fixed;
         left: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
         height: 95.7vh;
     }
 
     @media only screen and (min-width: 1824px) {
+        position: fixed;
         left: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
         height: 96.4vh;
     }
 
@@ -724,16 +730,14 @@ body {
     }
 
     &__wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: 100%;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            display: flex;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            display: flex;
+        }
     }
 }
 
@@ -763,8 +767,6 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
         height: 100%;
     }
 
@@ -833,7 +835,7 @@ body {
     width: 100%;
 
     @media only screen and (min-width: 1224px) and (max-width: 1823px) {
-        height: 25vh;
+        height: 40vh;
     }
 }
 
@@ -855,12 +857,6 @@ body {
 }
 
 .b-our-staff {
-
-    @media only screen and (min-width: 1824px) {
-        top: 68%;
-        width: 53%;
-        height: 34%;
-    }
 
     &__title {
         z-index: 42;
@@ -890,7 +886,20 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 2vh;
     width: 100%;
+
+    @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+        margin: 2% 0;
+    }
+
+    @media only screen and (min-width: 1824px) {
+        margin: 2% 0;
+    }
 
     li {
         position: relative;
@@ -898,6 +907,48 @@ body {
         height: 180px;
         margin: 1%;
         list-style: none;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1823px) {
+            overflow: hidden;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            width: 30%;
+            height: 8vw;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        @media only screen and (min-width: 1824px) {
+            overflow: hidden;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            width: 30%;
+            height: 8vw;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;;
+        }
 
         &:hover .b-photo-staff-mask {
             opacity: 0.8;
@@ -923,25 +974,25 @@ body {
     &__title {
         &_big {
             position: relative;
-            top: 40px;
+            top: 2vh;
             z-index: 51;
             color: @color-title-photo-staff-mask;
             font-weight: bold;
             font-size: 16px;
             font-family: "Roboto-Bold";
-            line-height: 1.6;
+            line-height: 1;
             text-align: center;
             text-transform: uppercase;
         }
 
         &_small {
             position: relative;
-            top: 25px;
+            top: 2vh;
             z-index: 52;
             color: @color-title-photo-staff-mask;
             font-size: 13px;
             font-family: "Roboto-Thin";
-            line-height: 2;
+            line-height: 1;
             text-align: center;
         }
     }
@@ -956,7 +1007,7 @@ body {
 
     &__rectangle {
         position: relative;
-        top: 19%;
+        top: 22%;
         left: 32%;
         z-index: 45;
         width: 83px;
@@ -983,7 +1034,6 @@ body {
         position: relative;
         z-index: 5;
         width: 1px;
-        height: 100%;
         margin-top: 2%;
         background-image: url("../img/vertical-line-about-us.png");
     }
@@ -992,7 +1042,6 @@ body {
         position: relative;
         z-index: 5;
         width: 1px;
-        height: 100%;
         margin-top: 2%;
         background-image: url("../img/vertical-line-about-us.png");
     }
@@ -1011,7 +1060,6 @@ body {
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 50%;
-        height: 100%;
     }
 
     @media only screen and (min-width: 1824px) {
@@ -1025,7 +1073,6 @@ body {
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 50%;
-        height: 100%;
     }
 }
 
@@ -1373,7 +1420,7 @@ body {
 
     @media only screen and (min-width: 1224px) and (max-width: 1823px) {
         margin-left: 0;
-        line-height: 1.2;
+        line-height: 1.6;
     }
 
     @media only screen and (min-width: 1824px) {
