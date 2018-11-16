@@ -821,19 +821,12 @@ body {
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   .b-who-we-are__description {
-    width: 100%;
     margin: 0;
-    font-size: 1.9vmin;
   }
 }
 @media only screen and (min-width: 1824px) {
   .b-who-we-are__description {
     margin: 0;
-  }
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-who-we-are__description p {
-    margin: 2% 0;
   }
 }
 .b-main-image-who-we-are {
@@ -1325,11 +1318,6 @@ body {
   font-family: "Roboto-Light";
   line-height: 1.6;
   text-align: left;
-}
-@media only screen and (min-width: 1224px) and (max-width: 1823px) {
-  .b-testimonials-text {
-    font-size: 1.9vmin;
-  }
 }
 .b-services {
   margin-bottom: 8%;
