@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .b-home {
     left: 0;
     margin: 0;
@@ -559,10 +563,6 @@ body {
         li a.activeLink {
             color: @color-filter-item-active;
         }
-
-        a {
-            text-decoration: none;
-        }
     }
 
     &__line {
@@ -590,6 +590,10 @@ body {
     font-family: "Roboto-Light";
     line-height: 1.6;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.b-filter-item-active {
+    color: @color-filter-item-active;
 }
 
 .b-social-icons {
