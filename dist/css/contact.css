@@ -581,6 +581,9 @@ a {
 .b-filter__items li a.activeLink {
   color: #ffffff;
 }
+.b-filter__items a {
+  text-decoration: none;
+}
 .b-filter__line {
   position: absolute;
   left: 0;
@@ -714,8 +717,8 @@ a {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 6%;
-  left: 14%;
+  top: 3%;
+  left: 13%;
   width: 75%;
   background-image: url("../img/bg-connect-with-us.png");
 }
@@ -731,7 +734,7 @@ a {
   .b-connect-with-us {
     top: 0;
     left: 300px;
-    width: 30%;
+    width: 40%;
     margin: 2% 0 0 2%;
   }
 }
@@ -746,12 +749,22 @@ a {
   font-family: "Roboto-Light";
   line-height: 1;
 }
+@media only screen and (min-width: 1824px) {
+  .b-connect-with-us-text__title {
+    font-size: 24px;
+  }
+}
 .b-connect-with-us-text__description {
   margin: 3% 0;
   color: #a3a3a3;
   font-size: 11px;
   font-family: "Roboto-Light";
   line-height: 1.2;
+}
+@media only screen and (min-width: 1824px) {
+  .b-connect-with-us-text__description {
+    font-size: 18px;
+  }
 }
 .b-horizontal-line {
   position: relative;
@@ -766,6 +779,11 @@ a {
   height: 100%;
   margin: 0 5% 3% 5%;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-send-message {
+    margin: 0 5% 5% 5%;
+  }
+}
 .b-form-send-message__title {
   margin: 0 0 3% 0;
   color: #000000;
@@ -773,11 +791,21 @@ a {
   font-family: "Roboto-Light";
   line-height: 1;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-send-message__title {
+    font-size: 24px;
+  }
+}
 input {
   outline: none;
 }
 form {
   position: relative;
+}
+@media only screen and (min-width: 1824px) {
+  form {
+    height: 217px;
+  }
 }
 .b-form-name {
   position: relative;
@@ -805,8 +833,9 @@ form {
 }
 @media only screen and (min-width: 1824px) {
   .b-form-name {
-    width: 47%;
-    margin: 0 0 3% 0;
+    width: 48%;
+    height: 63px;
+    margin: 0 0 2% 0;
   }
 }
 .b-form-name input.b-form-name-input {
@@ -821,11 +850,23 @@ form {
   line-height: 2;
   text-align: left;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-name input.b-form-name-input {
+    height: 63px;
+    padding-left: 80px;
+  }
+}
 .b-form-name .b-input-logo {
   position: absolute;
-  top: 0%;
+  top: 0;
   width: 36px;
   height: 36px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-form-name .b-input-logo {
+    width: 63px;
+    height: 63px;
+  }
 }
 .b-form-name .b-input-logo::after {
   position: absolute;
@@ -835,6 +876,11 @@ form {
   height: 36px;
   content: "";
   background: #eaeaea;
+}
+@media only screen and (min-width: 1824px) {
+  .b-form-name .b-input-logo::after {
+    height: 63px;
+  }
 }
 .b-form-name .b-input-logo-ellipse {
   position: relative;
@@ -847,10 +893,25 @@ form {
   border-color: #1ab5b3;
   border-radius: 50%;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-name .b-input-logo-ellipse {
+    top: 14px;
+    left: 15px;
+    width: 34px;
+    height: 34px;
+  }
+}
 .b-input-name-logo-icon {
   position: absolute;
   top: 12px;
   left: 14px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-input-name-logo-icon {
+    top: 23px;
+    left: 26px;
+    width: 19%;
+  }
 }
 .b-form-email {
   position: relative;
@@ -878,8 +939,9 @@ form {
 }
 @media only screen and (min-width: 1824px) {
   .b-form-email {
-    width: 47%;
-    margin: 0 0 3% 0;
+    width: 48%;
+    height: 63px;
+    margin: 0 0 2% 0;
   }
 }
 .b-form-email input.b-form-email-input {
@@ -894,11 +956,23 @@ form {
   line-height: 2;
   text-align: left;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-email input.b-form-email-input {
+    height: 63px;
+    padding-left: 80px;
+  }
+}
 .b-form-email .b-input-logo {
   position: absolute;
-  top: 0%;
+  top: 0;
   width: 36px;
   height: 36px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-form-email .b-input-logo {
+    width: 63px;
+    height: 63px;
+  }
 }
 .b-form-email .b-input-logo::after {
   position: absolute;
@@ -908,6 +982,11 @@ form {
   height: 36px;
   content: "";
   background: #eaeaea;
+}
+@media only screen and (min-width: 1824px) {
+  .b-form-email .b-input-logo::after {
+    height: 63px;
+  }
 }
 .b-form-email .b-input-logo-ellipse {
   position: relative;
@@ -920,10 +999,25 @@ form {
   border-color: #1ab5b3;
   border-radius: 50%;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-email .b-input-logo-ellipse {
+    top: 14px;
+    left: 15px;
+    width: 34px;
+    height: 34px;
+  }
+}
 .b-input-email-logo-icon {
   position: absolute;
   top: 13px;
   left: 13px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-input-email-logo-icon {
+    top: 26px;
+    left: 26px;
+    width: 19%;
+  }
 }
 .b-form-website {
   position: relative;
@@ -951,8 +1045,9 @@ form {
 }
 @media only screen and (min-width: 1824px) {
   .b-form-website {
-    width: 47%;
-    margin: 0 0 3% 0;
+    width: 48%;
+    height: 63px;
+    margin: 0 0 2% 0;
   }
 }
 .b-form-website input.b-form-website-input {
@@ -967,6 +1062,12 @@ form {
   line-height: 2;
   text-align: left;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-website input.b-form-website-input {
+    height: 63px;
+    padding-left: 80px;
+  }
+}
 .b-form-website .b-input-logo-ellipse {
   position: relative;
   top: 6px;
@@ -978,11 +1079,25 @@ form {
   border-color: #1ab5b3;
   border-radius: 50%;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-website .b-input-logo-ellipse {
+    top: 14px;
+    left: 15px;
+    width: 34px;
+    height: 34px;
+  }
+}
 .b-form-website .b-input-logo {
   position: absolute;
-  top: 0%;
+  top: 0;
   width: 36px;
   height: 36px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-form-website .b-input-logo {
+    width: 63px;
+    height: 63px;
+  }
 }
 .b-form-website .b-input-logo::after {
   position: absolute;
@@ -993,10 +1108,22 @@ form {
   content: "";
   background: #eaeaea;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-website .b-input-logo::after {
+    height: 63px;
+  }
+}
 .b-input-website-logo-icon {
   position: absolute;
   top: 12px;
   left: 13px;
+}
+@media only screen and (min-width: 1824px) {
+  .b-input-website-logo-icon {
+    top: 24px;
+    left: 26px;
+    width: 19%;
+  }
 }
 .b-form-message {
   position: relative;
@@ -1025,6 +1152,7 @@ form {
 @media only screen and (min-width: 1824px) {
   .b-form-message {
     width: 50%;
+    height: 64%;
     margin: 0;
   }
 }
@@ -1057,9 +1185,9 @@ form {
   }
 }
 textarea.b-form-message-textarea {
+  overflow: auto;
   width: 100%;
   height: 100%;
-  overflow: auto;
   padding: 5%;
   outline: none;
   border: 1px solid #eaeaea;
@@ -1070,6 +1198,11 @@ textarea.b-form-message-textarea {
   text-align: left;
   resize: none;
   -moz-appearance: none;
+}
+@media only screen and (min-width: 1824px) {
+  textarea.b-form-message-textarea {
+    line-height: 2;
+  }
 }
 .b-form-submit {
   position: relative;
@@ -1094,34 +1227,35 @@ textarea.b-form-message-textarea {
 @media only screen and (min-width: 1824px) {
   .b-form-submit {
     width: 50%;
+    height: 63px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   form .b-form-submit {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   form .b-form-submit {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 }
 @media only screen and (min-width: 1224px) and (max-width: 1823px) {
   form .b-form-submit {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 }
 @media only screen and (min-width: 1824px) {
   form .b-form-submit {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 }
 .b-form-submit-button {
@@ -1130,10 +1264,24 @@ textarea.b-form-message-textarea {
   border: none;
   background-color: #1ab5b3;
 }
+@media only screen and (min-width: 1824px) {
+  .b-form-submit-button {
+    height: 63px;
+  }
+}
 .b-form-submit-button p {
   margin: 0 auto;
   color: #ffffff;
   font-size: 14px;
   font-family: "Roboto-light";
   text-transform: uppercase;
+}
+.bg {
+  background-image: url("bg.png");
+  position: absolute;
+  left: 325px;
+  top: 25px;
+  width: 782px;
+  height: 467px;
+  z-index: 4;
 }
