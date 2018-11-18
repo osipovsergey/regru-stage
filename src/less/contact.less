@@ -555,6 +555,10 @@ a {
         li a.activeLink {
             color: @color-filter-item-active;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &__line {
@@ -582,6 +586,10 @@ a {
     font-family: "Roboto-Light";
     line-height: 1.6;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.b-filter-item-active {
+    color: @color-filter-item-active;
 }
 
 .b-social-icons {
@@ -698,8 +706,8 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 6%;
-    left: 14%;
+    top: 3%;
+    left: 13%;
     width: 75%;
     background-image: url("../img/bg-connect-with-us.png");
 
@@ -713,7 +721,7 @@ a {
     @media only screen and (min-width: 1824px) {
         top: 0;
         left: 300px;
-        width: 30%;
+        width: 40%;
         margin: 2% 0 0 2%;
     }
 }
@@ -728,6 +736,10 @@ a {
         font-size: 15px;
         font-family: "Roboto-Light";
         line-height: 1;
+
+        @media only screen and (min-width: 1824px) {
+            font-size: 24px;
+        }
     }
 
     &__description {
@@ -736,6 +748,10 @@ a {
         font-size: 11px;
         font-family: "Roboto-Light";
         line-height: 1.2;
+
+        @media only screen and (min-width: 1824px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -753,12 +769,20 @@ a {
     height: 100%;
     margin: 0 5% 3% 5%;
 
+    @media only screen and (min-width: 1824px) {
+        margin: 0 5% 5% 5%;
+    }
+
     &__title {
         margin: 0 0 3% 0;
         color: @color-title-send-message;
         font-size: 15px;
         font-family: "Roboto-Light";
         line-height: 1;
+
+        @media only screen and (min-width: 1824px) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -768,6 +792,10 @@ input {
 
 form {
     position: relative;
+
+    @media only screen and (min-width: 1824px) {
+        height: 217px;
+    }
 }
 
 .b-form-name {
@@ -792,8 +820,9 @@ form {
     }
 
     @media only screen and (min-width: 1824px) {
-        width: 47%;
-        margin: 0 0 3% 0;
+        width: 48%;
+        height: 63px;
+        margin: 0 0 2% 0;
     }
 }
 
@@ -808,13 +837,23 @@ form {
     font-family: "Roboto-Light";
     line-height: 2;
     text-align: left;
+
+    @media only screen and (min-width: 1824px) {
+        height: 63px;
+        padding-left: 80px;
+    }
 }
 
 .b-form-name .b-input-logo {
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 36px;
     height: 36px;
+
+    @media only screen and (min-width: 1824px) {
+        width: 63px;
+        height: 63px;
+    }
 
     &::after {
         position: absolute;
@@ -824,6 +863,10 @@ form {
         height: 36px;
         content: "";
         background: @border-color-form-logo;
+
+        @media only screen and (min-width: 1824px) {
+            height: 63px;
+        }
     }
 }
 
@@ -837,12 +880,25 @@ form {
     border-style: solid;
     border-color: @border-color-form-logo-ellipse;
     border-radius: 50%;
+
+    @media only screen and (min-width: 1824px) {
+        top: 14px;
+        left: 15px;
+        width: 34px;
+        height: 34px;
+    }
 }
 
 .b-input-name-logo-icon {
     position: absolute;
     top: 12px;
     left: 14px;
+
+    @media only screen and (min-width: 1824px) {
+        top: 23px;
+        left: 26px;
+        width: 19%;
+    }
 }
 
 .b-form-email {
@@ -867,8 +923,9 @@ form {
     }
 
     @media only screen and (min-width: 1824px) {
-        width: 47%;
-        margin: 0 0 3% 0;
+        width: 48%;
+        height: 63px;
+        margin: 0 0 2% 0;
     }
 }
 
@@ -883,13 +940,23 @@ form {
     font-family: "Roboto-Light";
     line-height: 2;
     text-align: left;
+
+    @media only screen and (min-width: 1824px) {
+        height: 63px;
+        padding-left: 80px;
+    }
 }
 
 .b-form-email .b-input-logo {
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 36px;
     height: 36px;
+
+    @media only screen and (min-width: 1824px) {
+        width: 63px;
+        height: 63px;
+    }
 
     &::after {
         position: absolute;
@@ -899,6 +966,10 @@ form {
         height: 36px;
         content: "";
         background: @border-color-form-logo;
+
+        @media only screen and (min-width: 1824px) {
+            height: 63px;
+        }
     }
 }
 
@@ -912,12 +983,25 @@ form {
     border-style: solid;
     border-color: @border-color-form-logo-ellipse;
     border-radius: 50%;
+
+    @media only screen and (min-width: 1824px) {
+        top: 14px;
+        left: 15px;
+        width: 34px;
+        height: 34px;
+    }
 }
 
 .b-input-email-logo-icon {
     position: absolute;
     top: 13px;
     left: 13px;
+
+    @media only screen and (min-width: 1824px) {
+        top: 26px;
+        left: 26px;
+        width: 19%;
+    }
 }
 
 .b-form-website {
@@ -942,8 +1026,9 @@ form {
     }
 
     @media only screen and (min-width: 1824px) {
-        width: 47%;
-        margin: 0 0 3% 0;
+        width: 48%;
+        height: 63px;
+        margin: 0 0 2% 0;
     }
 }
 
@@ -958,6 +1043,11 @@ form {
     font-family: "Roboto-Light";
     line-height: 2;
     text-align: left;
+
+    @media only screen and (min-width: 1824px) {
+        height: 63px;
+        padding-left: 80px;
+    }
 }
 
 .b-form-website .b-input-logo-ellipse {
@@ -970,13 +1060,25 @@ form {
     border-style: solid;
     border-color: @border-color-form-logo-ellipse;
     border-radius: 50%;
+
+    @media only screen and (min-width: 1824px) {
+        top: 14px;
+        left: 15px;
+        width: 34px;
+        height: 34px;
+    }
 }
 
 .b-form-website .b-input-logo {
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 36px;
     height: 36px;
+
+    @media only screen and (min-width: 1824px) {
+        width: 63px;
+        height: 63px;
+    }
 
     &::after {
         position: absolute;
@@ -986,6 +1088,10 @@ form {
         height: 36px;
         content: "";
         background: @border-color-form-logo;
+
+        @media only screen and (min-width: 1824px) {
+            height: 63px;
+        }
     }
 }
 
@@ -993,6 +1099,12 @@ form {
     position: absolute;
     top: 12px;
     left: 13px;
+
+    @media only screen and (min-width: 1824px) {
+        top: 24px;
+        left: 26px;
+        width: 19%;
+    }
 }
 
 .b-form-message {
@@ -1018,6 +1130,7 @@ form {
 
     @media only screen and (min-width: 1824px) {
         width: 50%;
+        height: 64%;
         margin: 0;
     }
 }
@@ -1049,9 +1162,9 @@ form .b-form-message {
 }
 
 textarea.b-form-message-textarea {
+    overflow: auto;
     width: 100%;
     height: 100%;
-    overflow: auto;
     padding: 5%;
     outline: none;
     border: 1px solid @border-color-form;
@@ -1062,6 +1175,10 @@ textarea.b-form-message-textarea {
     text-align: left;
     resize: none;
     -moz-appearance: none;
+
+    @media only screen and (min-width: 1824px) {
+        line-height: 2;
+    }
 }
 
 .b-form-submit {
@@ -1083,32 +1200,33 @@ textarea.b-form-message-textarea {
 
     @media only screen and (min-width: 1824px) {
         width: 50%;
+        height: 63px;
     }
 }
 
 form .b-form-submit {
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         position: absolute;
-        bottom: 0;
         right: 0;
+        bottom: 0;
     }
 
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         position: absolute;
-        bottom: 0;
         right: 0;
+        bottom: 0;
     }
 
     @media only screen and (min-width: 1224px) and (max-width: 1823px) {
         position: absolute;
-        bottom: 0;
         right: 0;
+        bottom: 0;
     }
 
     @media only screen and (min-width: 1824px) {
         position: absolute;
-        bottom: 0;
         right: 0;
+        bottom: 0;
     }
 }
 
@@ -1118,6 +1236,10 @@ form .b-form-submit {
     border: none;
     background-color: @bg-color-submit-button;
 
+    @media only screen and (min-width: 1824px) {
+        height: 63px;
+    }
+
     p {
         margin: 0 auto;
         color: @color-text-submit-button;
@@ -1125,4 +1247,14 @@ form .b-form-submit {
         font-family: "Roboto-light";
         text-transform: uppercase;
     }
+}
+
+.bg {
+  background-image: url("bg.png");
+  position: absolute;
+  left: 325px;
+  top: 25px;
+  width: 782px;
+  height: 467px;
+  z-index: 4;
 }
