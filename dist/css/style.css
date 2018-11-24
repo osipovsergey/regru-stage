@@ -18,6 +18,10 @@
   font-family: "Roboto-Italic";
   src: url('../fonts/Roboto-Italic.ttf');
 }
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src: url('../fonts/Roboto-BoldItalic.ttf');
+}
 *,
 *:before,
 *:after {
@@ -938,11 +942,6 @@ body {
     width: 50vw;
     max-width: 100vw;
     height: 280px;
-  }
-}
-@media only screen and (max-width: 568px) and (min-width: 568px) {
-  .b-portfolio__wrapper ul li {
-    height: 218px;
   }
 }
 @media only screen and (max-width: 667px) and (min-width: 667px) {
