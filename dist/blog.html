@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../dist/css/blog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    [endif]-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body class="b-blog b-blog__background">
+
+    <!--Кнопка меню сайта для мобильной версии-->
+
+    <div class="b-toggle-button">
+        <div class="b-button-navigation b-button-navigation__line-top"></div>
+        <div class="b-button-navigation b-button-navigation__line-middle"></div>
+        <div class="b-button-navigation b-button-navigation__line-bottom"></div>
+    </div>
+
+    <div class="b-menu">
+        <div class="b-logo">
+            <div class="b-logo__kappe">kappe</div>
+            <div class="b-logo__forcreatives"></div>
+            <img class="b-logo__image-1" src="../src/img/logo-image.png" alt="img">
+            <img class="b-logo__image-2" src="../src/img/logo-image.png" alt="img">
+            <img class="b-logo__image-3" src="../src/img/logo-image.png" alt="img">
+        </div>
+
+        <nav class="b-site-navigation">
+            <ul>
+                <li><a class="b-link-home b-link-home__title b-link-home_size" href="../index.html"><p>HOME</p></a></li>
+            </ul>
+            <div class="b-line-navigation-1 b-line-navigation-1_top"></div>
+            <ul>
+                <li><a class="b-link-work b-link-work__title b-link-work_size" href="../dist/work.html"><p>WORK</p></a></li>
+            </ul>
+            <div class="b-line-navigation-2 b-line-navigation-2_top"></div>
+            <ul>
+                <li><a class="b-link-about b-link-about__title b-link-about_size" href="../dist/about.html"><p>ABOUT</p></a></li>
+            </ul>
+            <div class="b-line-navigation-3 b-line-navigation-3_top"></div>
+            <ul>
+                <li><a class="b-link-blog b-link-blog__title b-link-blog_size" href="../dist/blog.html"><p>BLOG</p></a></li>
+            </ul>
+            <div class="b-line-navigation-4 b-line-navigation-4_top"></div>
+            <ul>
+                <li><a class="b-link-services b-link-services__title b-link-services_size" href="../dist/services.html"><p>SERVICES</p></a></li>
+            </ul>
+            <div class="b-line-navigation-5 b-line-navigation-5_top"></div>
+            <ul>
+                <li><a class="b-link-contact b-link-contact__title b-link-contact_size" href="../dist/contact.html"><p>CONTACT</p></a></li>
+            </ul>
+        </nav>
+
+        <aside class="b-filter">
+            <span class="b-filter__title">Filter</span>
+            <div class="b-filter__icon"></div>
+            <ul class="b-filter__items">
+                <li><a class="b-filter-item b-filter-item__All-Works b-filter-item-active" href="#">All Works</a></li>
+                <li><a class="b-filter-item b-filter-item__Web-Design" href="#">web design</a></li>
+                <li><a class="b-filter-item b-filter-item__Illustration" href="#">illustration</a></li>
+                <li><a class="b-filter-item b-filter-item__Photography" href="#">photography</a></li>
+                <li><a class="b-filter-item b-filter-item__Wallpapers" href="#">wallpapers</a></li>
+                <li><a class="b-filter-item b-filter-item__Brochures" href="#">brochures</a></li>
+            </ul>
+            <div class="b-filter__line"></div>
+        </aside>
+
+        <aside class="b-social-icons">
+        <a class="b-social-icon b-social-icon__flickr" href="https://www.flickr.com/"></a>
+            <a class="b-social-icon b-social-icon__googleplus" href="https://plus.google.com/"></a>
+            <a class="b-social-icon b-social-icon__twitter" href="https://twitter.com/"></a>
+            <a class="b-social-icon b-social-icon__pinterest" href="https://www.pinterest.com/"></a>
+            <a class="b-social-icon b-social-icon__dribbble" href="https://dribbble.com/"></a>
+            <a class="b-social-icon b-social-icon__behance" href="https://www.behance.net/"></a>
+            <a class="b-social-icon b-social-icon__facebook" href="https://facebook.com/"></a>
+            <div class="b-social-icons__line"></div>
+        </aside>
+
+        <span class="b-title-rights-reserved">&copy 2014 Kappe, All Rights Reserved</span>
+    </div>
+
+    <!-- Основной контент -->
+
+    <div class="b-posts">
+        <div class="b-posts__wrapper">
+            <div class="b-posts__items">
+                <div class="b-posts__items-column">
+                    <div class="b-gallery-post">
+                        <div class="b-gallery-post__img">
+                            <div class="b-slider">
+                                <div class="b-slider__controls">
+                                    <a class="b-preview-slide" href="javascript:void(0);">&lt;</a>
+                                    <a class="b-next-slide" href="javascript:void(0);">&gt;</a>
+                                </div>
+                                <div class="b-slides b-slides_size">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-gallery-post__info">
+                            <div class="b-gallery-post__info__title">Gallery Post Example</div>
+                            <div class="b-gallery-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-gallery-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-gallery-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-img-post">
+                        <div class="b-img-post__img">
+                            <img src="../src/img/img-post.png" alt="img">
+                        </div>
+                        <div class="b-img-post-mask">
+                            <a href="#" class="b-img-post-mask__info">
+                                <div class="b-img-post-mask__logo-ellipse">
+                                    <div class="b-img-post-mask__logo-icon"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="b-link-post">
+                        <div class="b-link-post__content">
+                            <div class="b-link-post__description">Another Post where you can  put a link to a specific website</div>
+                            <a class="b-link-post__link" href="#">
+                                <p>http://www.themeforest.net</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-posts__items-column">
+                    <div class="b-link-post">
+                        <div class="b-link-post__content">
+                            <div class="b-link-post__description">Another Post where you can  put a link to a specific website</div>
+                            <a class="b-link-post__link" href="#">
+                                <p>http://www.themeforest.net</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="b-video-post">
+                        <div class="b-video-post__img b-video-post__img_size-big">
+                            <img src="../src/img/img-big-video-post.png" alt="img">
+                        </div>
+                        <div class="b-video-post__control-bar">
+                            <div class="b-video-post__control-bar__play">
+                                <img src="../src/img/icon-play-control-bar-video.png" alt="img">
+                            </div>
+                            <div class="b-video-post__control-bar__progress-line">
+                                <div class="b-video-post__control-bar__progress-line__load">
+                                    <div class="b-video-post__control-bar__progress-line__load-line"></div>
+                                </div>
+                            </div>
+                            <div class="b-video-post__control-bar__volume">
+                                <div class="b-video-post__control-bar__volume__state-line">
+                                    <div class="b-video-post__control-bar__volume__indicator-line"></div>
+                                </div>
+                                <img src="../src/img/icon-volume-control-bar-video.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="b-video-post__info">
+                            <div class="b-video-post__info__title">Self-hosted video post</div>
+                            <div class="b-video-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-video-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-video-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-standart-post">
+                        <div class="b-standart-post__img b-standart-post__img_size">
+                            <img src="../src/img/img-standart-post.png" alt="img">
+                        </div>
+                        <div class="b-standart-post__info">
+                            <div class="b-standart-post__info__title">Standart post format</div>
+                            <div class="b-standart-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-standart-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-standart-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-posts__items-column">
+                    <div class="b-img-post">
+                        <div class="b-img-post__img">
+                            <img src="../src/img/img-post.png" alt="img">
+                        </div>
+                        <div class="b-img-post-mask">
+                            <a href="#" class="b-img-post-mask__info">
+                                <div class="b-img-post-mask__logo-ellipse">
+                                    <div class="b-img-post-mask__logo-icon"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="b-standart-post">
+                        <div class="b-standart-post__img b-standart-post__img_size-big">
+                            <img src="../src/img/img-big-standart-post.png" alt="img">
+                        </div>
+                        <div class="b-standart-post__info">
+                            <div class="b-standart-post__info__title">Standart post format</div>
+                            <div class="b-standart-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-standart-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-standart-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-aside-post">
+                        <div class="b-aside-post__content">
+                            <div class="b-aside-post__content__title">Aside Post Format</div>
+                            <div class="b-aside-post__content__description">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-posts__items-column">
+                    <div class="b-quote-post">
+                        <div class="b-quote-post__content">
+                            <div class="b-quote-post__content__text">Logic will get you from A to B. Imagination will take you everywhere.</div>
+                            <div class="b-quote-post__content__quotes">“</div>
+                            <div class="b-quote-post__content__author">Albert Einstein</div>
+                        </div>
+                    </div>
+
+                    <div class="b-standart-post">
+                        <div class="b-standart-post__img b-standart-post__img_size">
+                            <img src="../src/img/img-standart-post.png" alt="img">
+                        </div>
+                        <div class="b-standart-post__info">
+                            <div class="b-standart-post__info__title">Standart post format</div>
+                            <div class="b-standart-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-standart-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-standart-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-video-post">
+                        <div class="b-video-post__img b-video-post__img_size">
+                            <img src="../src/img/img-video-post.png" alt="img">
+                        </div>
+                        <div class="b-video-post__control-bar">
+                            <div class="b-video-post__control-bar__play">
+                                <img src="../src/img/icon-play-control-bar-video.png" alt="img">
+                            </div>
+                            <div class="b-video-post__control-bar__progress-line">
+                                <div class="b-video-post__control-bar__progress-line__load">
+                                    <div class="b-video-post__control-bar__progress-line__load-line"></div>
+                                </div>
+                            </div>
+                            <div class="b-video-post__control-bar__volume">
+                                <div class="b-video-post__control-bar__volume__state-line">
+                                    <div class="b-video-post__control-bar__volume__indicator-line"></div>
+                                </div>
+                                <img src="../src/img/icon-volume-control-bar-video.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="b-video-post__info">
+                            <div class="b-video-post__info__title">Self-hosted video post</div>
+                            <div class="b-video-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-video-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-video-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-posts__items-column">
+                    <div class="b-gallery-post">
+                        <div class="b-gallery-post__img">
+                            <div class="b-slider">
+                                <div class="b-slider__controls">
+                                    <a class="b-preview-slide" href="javascript:void(0);">&lt;</a>
+                                    <a class="b-next-slide" href="javascript:void(0);">&gt;</a>
+                                </div>
+                                <div class="b-slides b-slides_size-big">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                    <img src="../src/img/img-gallery-post.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-gallery-post__info">
+                            <div class="b-gallery-post__info__title">Gallery Post Example</div>
+                            <div class="b-gallery-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-gallery-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-gallery-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="b-standart-post">
+                        <div class="b-standart-post__img b-standart-post__img_size">
+                            <img src="../src/img/img-standart-post.png" alt="img">
+                        </div>
+                        <div class="b-standart-post__info">
+                            <div class="b-standart-post__info__title">Standart post format</div>
+                            <div class="b-standart-post__info__description">
+                                A man who works with his hands is a laborer; a man who works with his hands and his brain is a craftsman; but a man who
+                            </div>
+                            <div class="b-standart-post__info__footer">
+                                <a href="../dist/blog-post.html">
+                                    <span class="b-gallery-post__info__footer__comments">
+                                        <img src="../src/img/icon-comments-post-footer.png" alt="img">
+                                        3 comments
+                                    </span>
+                                </a>
+                                <span class="b-standart-post__info__footer__date">
+                                    <img src="../src/img/icon-date-post-footer.png" alt="img">
+                                    Dec 19, 2013
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-older-posts">
+                <button class="b-older-posts-button" type="button">OLDER POSTS</button>
+            </div>
+        </div>
+   </div>
+
+    <div class="b-quick-contact-info">
+        <div class="b-quick-contact-info__logo b-quick-contact-info__logo-ellipse"></div>
+        <div class="b-quick-contact-info__logo b-quick-contact-info__logo-icon"></div>
+    </div>
+
+    <div class="b-information-tip">
+        <div class="b-info b-info__title">
+            <div class="b-info__phone">
+                <p class="b-info__phone-title">9930 1234 5679</p>
+            </div>
+            <div class="b-info__email">
+                <p class="b-info__email-title">contact@domain.com</p>
+            </div>
+            <div class="b-info__address">
+                <p class="b-info__address-title">street address example</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
