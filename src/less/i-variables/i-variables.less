@@ -25,6 +25,11 @@
     src: url('../fonts/Roboto-Italic.ttf');
 }
 
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url('../fonts/Roboto-BoldItalic.ttf');
+}
+
 //Цвета
  @bg-logo: #ffffff;
  @bg-menu: #242b2e;
@@ -99,6 +104,43 @@
  @color-archives-title: #000000;
  @color-archives-item: #848484;
  @color-comments-item-border: #dddddd;
+ @color-gallery-post-title: #000000;
+ @color-gallery-post-description: #9c9c9c;
+ @color-border-gallery-post-description: #e3e3e3;
+ @color-comments-post-info-footer: #9a9a9a;
+ @color-date-post-info-footer: #9a9a9a;
+ @color-video-post-title: #000000;
+ @color-video-post-description: #9c9c9c;
+ @color-border-video-post-description: #e3e3e3;
+ @color-standart-post-title: #000000;
+ @color-standart-post-description: #9c9c9c;
+ @color-border-standart-post-description: #e3e3e3;
+ @bg-color-link-post: #1ab5b3;
+ @color-link-post-description: #ffffff;
+ @color-link-post-link: #ffffff;
+ @bg-color-left-block-aside-post: #1ab5b3;
+ @bg-color-content-aside-post: #242b2e;
+ @color-aside-post-title: #ffffff;
+ @color-aside-post-description: #9c9c9c;
+ @bg-color-quote-post: #242b2e;
+ @color-quote-post-text: #ffffff;
+ @color-quote-post-quotes: #1ab5b3;
+ @color-quote-post-author: #1ab5b3;
+ @bg-color-older-posts-button: #1ab5b3;
+ @color-text-older-posts-button: #ffffff;
+ @bg-color-info: #ffffff;
+ @bg-color-slide-button: #1ab5b3;
+ @bg-color-video-control-bar: #2b2b2b;
+ @color-border-right-play-video-control-bar: #383838;
+ @color-border-right-progress-line-video-control-bar: #383838;
+ @color-border-right-volume-video-control-bar: #383838;
+ @bg-color-load-progress-line-video-control-bar: #232323;
+ @bg-color-state-line-volume: #232323;
+ @border-color-load-progress-line-video-control-bar: #000000;
+ @border-color-state-line-volume: #000000;
+ @bg-color-load-line-progress-line: #3b3b3b;
+ @color-border-load-line-progress-line: #8f8f8f;
+ @bg-color-indicator-line-volume: #3b3b3b;
 
 //Линии между блоками навигации
 @topLineNavigation_1_small: 35px;
@@ -174,3 +216,8 @@
 
 //Отступ слева для содержимого комментария
 @marginLeftCommentChildrenContent: 13.3%;
+
+//Ширина колонок с постами
+@widthItemsColumnSmall: calc(100% / 2);  // @media only screen and (min-width: 480px) and (max-width: 667px)
+@widthItemsColumnMiddle: calc(100% / 3);  // @media only screen and (min-width: 668px) and (max-width: 1223px)
+@widthItemsColumnBig: calc(100% / 5);  // @media only screen and (min-width: 1223px)
