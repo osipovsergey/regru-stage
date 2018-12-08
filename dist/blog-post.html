@@ -10,50 +10,69 @@
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     [endif]-->
 </head>
-<body class="b-blog-post b-blog-post__background">
+<body class="b-blog-post">
 
     <!--Кнопка меню сайта для мобильной версии-->
 
     <div class="b-toggle-button">
-        <div class="b-button-navigation b-button-navigation__line-top"></div>
-        <div class="b-button-navigation b-button-navigation__line-middle"></div>
-        <div class="b-button-navigation b-button-navigation__line-bottom"></div>
+        <div class="b-button-navigation">
+            <div class="b-button-navigation__line-top"></div>
+            <div class="b-button-navigation__line-middle"></div>
+            <div class="b-button-navigation__line-bottom"></div>
+        </div>
     </div>
-
-    <!--Меню сайта-->
 
     <div class="b-menu">
         <div class="b-logo">
             <div class="b-logo__kappe">kappe</div>
             <div class="b-logo__forcreatives"></div>
-            <img class="b-logo__image-1" src="../src/img/logo-image.png" alt="img">
-            <img class="b-logo__image-2" src="../src/img/logo-image.png" alt="img">
-            <img class="b-logo__image-3" src="../src/img/logo-image.png" alt="img">
+            <img class="b-logo__image-first" src="../src/img/logo-image.png" alt="img">
+            <img class="b-logo__image-second" src="../src/img/logo-image.png" alt="img">
+            <img class="b-logo__image-third" src="../src/img/logo-image.png" alt="img">
         </div>
 
         <nav class="b-site-navigation">
             <ul>
-                <li><a class="b-link-home b-link-home__title b-link-home_size" href="../index.html"><p>HOME</p></a></li>
+                <li>
+                    <a class="b-link-home b-link-home_top" href="../index.html">
+                        <p class="b-link-home__title">HOME</p>
+                    </a>
+                </li>
             </ul>
-            <div class="b-line-navigation-1 b-line-navigation-1_top"></div>
             <ul>
-                <li><a class="b-link-work b-link-work__title b-link-work_size" href="../dist/work.html"><p>WORK</p></a></li>
+                <li>
+                    <a class="b-link-work b-link-work_top" href="../dist/work.html">
+                        <p class="b-link-work__title">WORK</p>
+                    </a>
+                </li>
             </ul>
-            <div class="b-line-navigation-2 b-line-navigation-2_top"></div>
             <ul>
-                <li><a class="b-link-about b-link-about__title b-link-about_size" href="../dist/about.html"><p>ABOUT</p></a></li>
+                <li>
+                    <a class="b-link-about b-link-about_top" href="../dist/about.html">
+                        <p class="b-link-about__title">ABOUT</p>
+                    </a>
+                </li>
             </ul>
-            <div class="b-line-navigation-3 b-line-navigation-3_top"></div>
             <ul>
-                <li><a class="b-link-blog b-link-blog__title b-link-blog_size activeLink" href="../dist/blog.html"><p>BLOG</p></a></li>
+                <li>
+                    <a class="b-link-blog b-link-blog_top activeLink" href="../dist/blog.html">
+                        <p class="b-link-blog__title">BLOG</p>
+                    </a>
+                </li>
             </ul>
-            <div class="b-line-navigation-4 b-line-navigation-4_top"></div>
             <ul>
-                <li><a class="b-link-services b-link-services__title b-link-services_size" href="../dist/services.html"><p>SERVICES</p></a></li>
+                <li>
+                    <a class="b-link-services b-link-services_top" href="../dist/services.html">
+                        <p class="b-link-services__title">SERVICES</p>
+                    </a>
+                </li>
             </ul>
-            <div class="b-line-navigation-5 b-line-navigation-5_top"></div>
             <ul>
-                <li><a class="b-link-contact b-link-contact__title b-link-contact_size" href="../dist/contact.html"><p>CONTACT</p></a></li>
+                <li>
+                    <a class="b-link-contact b-link-contact_top" href="../dist/contact.html">
+                        <p class="b-link-contact__title">CONTACT</p>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -61,25 +80,23 @@
             <span class="b-filter__title">Filter</span>
             <div class="b-filter__icon"></div>
             <ul class="b-filter__items">
-                <li><a class="b-filter-item b-filter-item__All-Works b-filter-item-active" href="#">All Works</a></li>
-                <li><a class="b-filter-item b-filter-item__Web-Design" href="#">web design</a></li>
-                <li><a class="b-filter-item b-filter-item__Illustration" href="#">illustration</a></li>
-                <li><a class="b-filter-item b-filter-item__Photography" href="#">photography</a></li>
-                <li><a class="b-filter-item b-filter-item__Wallpapers" href="#">wallpapers</a></li>
-                <li><a class="b-filter-item b-filter-item__Brochures" href="#">brochures</a></li>
+                <li><a class="b-filter__item b-filter__item_type_all-works b-filter-item-active" href="#">All Works</a></li>
+                <li><a class="b-filter__item b-filter__item_type_web-design" href="#">web design</a></li>
+                <li><a class="b-filter__item b-filter__item_type_illustration" href="#">illustration</a></li>
+                <li><a class="b-filter__item b-filter__item_type_photography" href="#">photography</a></li>
+                <li><a class="b-filter__item b-filter__item_type_wallpapers" href="#">wallpapers</a></li>
+                <li><a class="b-filter__item b-filter__item_type_brochures" href="#">brochures</a></li>
             </ul>
-            <div class="b-filter__line"></div>
         </aside>
 
         <aside class="b-social-icons">
-            <a class="b-social-icon b-social-icon__flickr" href="https://www.flickr.com/"></a>
-            <a class="b-social-icon b-social-icon__googleplus" href="https://plus.google.com/"></a>
-            <a class="b-social-icon b-social-icon__twitter" href="https://twitter.com/"></a>
-            <a class="b-social-icon b-social-icon__pinterest" href="https://www.pinterest.com/"></a>
-            <a class="b-social-icon b-social-icon__dribbble" href="https://dribbble.com/"></a>
-            <a class="b-social-icon b-social-icon__behance" href="https://www.behance.net/"></a>
-            <a class="b-social-icon b-social-icon__facebook" href="https://facebook.com/"></a>
-            <div class="b-social-icons__line"></div>
+            <a class="b-social-icon b-social-icon_type_flickr" href="https://www.flickr.com/"></a>
+            <a class="b-social-icon b-social-icon_type_googleplus" href="https://plus.google.com/"></a>
+            <a class="b-social-icon b-social-icon_type_twitter" href="https://twitter.com/"></a>
+            <a class="b-social-icon b-social-icon_type_pinterest" href="https://www.pinterest.com/"></a>
+            <a class="b-social-icon b-social-icon_type_dribbble" href="https://dribbble.com/"></a>
+            <a class="b-social-icon b-social-icon_type_behance" href="https://www.behance.net/"></a>
+            <a class="b-social-icon b-social-icon_type_facebook" href="https://facebook.com/"></a>
         </aside>
 
         <span class="b-title-rights-reserved">&copy 2014 Kappe, All Rights Reserved</span>
@@ -87,17 +104,17 @@
 
     <!-- Основной контент -->
 
-    <div class="b-single-post b-single-post__background">
+    <div class="b-single-post">
         <div class="b-single-post__wrapper">
             <div class="b-sidebar-left">
                 <div class="b-content">
                     <div class="b-post">
                         <div class="b-slider">
                             <div class="b-post__main-image">
-                                <img class="b-post__main-image__img b-selected" src="../src/img/main-image-single-post.png" alt="img">
-                                <img class="b-post__main-image__img" src="../src/img/main-image-single-post.png" alt="img">
-                                <img class="b-post__main-image__img" src="../src/img/main-image-single-post.png" alt="img">
-                                <img class="b-post__main-image__img" src="../src/img/main-image-single-post.png" alt="img">
+                                <img class="b-post__slide b-selected" src="../src/img/main-image-single-post.png" alt="img">
+                                <img class="b-post__slide" src="../src/img/main-image-single-post.png" alt="img">
+                                <img class="b-post__slide" src="../src/img/main-image-single-post.png" alt="img">
+                                <img class="b-post__slide" src="../src/img/main-image-single-post.png" alt="img">
 
                                 <ul class="b-rectangles">
                                     <li class="b-rectangle b-selected">
@@ -130,125 +147,125 @@
                             <div class="b-comments__item">
                                 <div class="b-comments__item-users">
                                     <div class="b-comments__item-user">
-                                        <div class="b-comments__item-user__content">
-                                            <div class="b-comments__item-user__header">
+                                        <div class="b-comments__item-user-content">
+                                            <div class="b-comments__item-user-header">
                                                 <img src="../src/img/photo-user-comment.png" alt="img">
-                                                <p class="b-comments__item-user__name">Shane Freer
+                                                <p class="b-comments__item-user-name">Shane Freer
                                                     <span class="b-comment-time">/ 58 minutes</span>
                                                 </p>
                                             </div>
-                                            <p class="b-comments__item-user__text">great post brainartworks</p>
+                                            <p class="b-comments__item-user-text">great post brainartworks</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                                 <div class="b-comments__item-other">
-                                    <div class="b-comments__item-children-1 b-comments__item-children-1_margin">
+                                    <div class="b-comments__item-children-first b-comments__item-children-first_margin">
                                         <div class="b-comments__item-users">
                                             <div class="b-comments__item-user">
-                                                <div class="b-comments__item-user__content b-comments__item-user__content_margin">
-                                                    <div class="b-comments__item-user__header">
+                                                <div class="b-comments__item-user-content b-comments__item-user-content_margin">
+                                                    <div class="b-comments__item-user-header">
                                                         <img src="../src/img/photo-user-comment.png" alt="img">
-                                                        <p class="b-comments__item-user__name">Collis Ta`eed
+                                                        <p class="b-comments__item-user-name">Collis Ta`eed
                                                             <span class="b-comment-time">/ 42 minutes</span>
                                                         </p>
                                                     </div>
-                                                    <p class="b-comments__item-user__text">yeah i really like it too, very useful!</p>
+                                                    <p class="b-comments__item-user-text">yeah i really like it too, very useful!</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="b-comments__item__border"></div>
+                                        <div class="b-comments__item-border"></div>
                                     </div>
                                 </div>
 
                                     <div class="b-comments__item-other">
-                                        <div class="b-comments__item-children-2 b-comments__item-children-2_margin">
+                                        <div class="b-comments__item-children-second b-comments__item-children-second_margin">
                                             <div class="b-comments__item-users">
                                                 <div class="b-comments__item-user">
-                                                    <div class="b-comments__item-user__content b-comments__item-user__content_margin">
-                                                        <div class="b-comments__item-user__header">
+                                                    <div class="b-comments__item-user-content b-comments__item-user-content_margin">
+                                                        <div class="b-comments__item-user-header">
                                                             <img src="../src/img/photo-user-comment.png" alt="img">
-                                                            <p class="b-comments__item-user__name">jremick
+                                                            <p class="b-comments__item-user-name">jremick
                                                                 <span class="b-comment-time">/ 22 minutes</span>
                                                             </p>
                                                         </div>
-                                                        <p class="b-comments__item-user__text">i found this post very useful too, the comment form works just</p>
+                                                        <p class="b-comments__item-user-text">i found this post very useful too, the comment form works just</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="b-comments__item__border"></div>
+                                            <div class="b-comments__item-border"></div>
                                         </div>
                                     </div>
 
                                         <div class="b-comments__item-other">
-                                            <div class="b-comments__item-children-3 b-comments__item-children-3_margin">
+                                            <div class="b-comments__item-children-third b-comments__item-children-third_margin">
                                                 <div class="b-comments__item-users">
                                                     <div class="b-comments__item-user">
-                                                        <div class="b-comments__item-user__content b-comments__item-user__content_margin">
-                                                            <div class="b-comments__item-user__header">
+                                                        <div class="b-comments__item-user-content b-comments__item-user-content_margin">
+                                                            <div class="b-comments__item-user-header">
                                                                 <img src="../src/img/photo-user-comment.png" alt="img">
-                                                                <p class="b-comments__item-user__name">joshjanssen
+                                                                <p class="b-comments__item-user-name">joshjanssen
                                                                     <span class="b-comment-time">/ 22 minutes</span>
                                                                 </p>
                                                             </div>
-                                                            <p class="b-comments__item-user__text">yep, especially when it comes to  comment testing</p>
+                                                            <p class="b-comments__item-user-text">yep, especially when it comes to  comment testing</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="b-comments__item__border"></div>
+                                                <div class="b-comments__item-border"></div>
                                             </div>
                                         </div>
 
                                     <div class="b-comments__item-other">
-                                        <div class="b-comments__item-children-2 b-comments__item-children-2_margin">
+                                        <div class="b-comments__item-children-second b-comments__item-children-second_margin">
                                             <div class="b-comments__item-users">
                                                 <div class="b-comments__item-user">
-                                                    <div class="b-comments__item-user__content b-comments__item-user__content_margin">
-                                                        <div class="b-comments__item-user__header">
+                                                    <div class="b-comments__item-user-content b-comments__item-user-content_margin">
+                                                        <div class="b-comments__item-user-header">
                                                             <img src="../src/img/photo-user-comment.png" alt="img">
-                                                            <p class="b-comments__item-user__name">stewboon
+                                                            <p class="b-comments__item-user-name">stewboon
                                                                 <span class="b-comment-time">/ 22 minutes</span>
                                                             </p>
                                                         </div>
-                                                        <p class="b-comments__item-user__text">nice job!</p>
+                                                        <p class="b-comments__item-user-text">nice job!</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="b-comments__item__border"></div>
+                                            <div class="b-comments__item-border"></div>
                                         </div>
                                     </div>
 
                                 <div class="b-comments__item-other">
-                                    <div class="b-comments__item-children-1 b-comments__item-children-1_margin">
+                                    <div class="b-comments__item-children-first b-comments__item-children-first_margin">
                                         <div class="b-comments__item-users">
                                             <div class="b-comments__item-user">
-                                                <div class="b-comments__item-user__content b-comments__item-user__content_margin">
-                                                    <div class="b-comments__item-user__header">
+                                                <div class="b-comments__item-user__content b-comments__item-user-content_margin">
+                                                    <div class="b-comments__item-user-header">
                                                         <img src="../src/img/photo-user-comment.png" alt="img">
-                                                        <p class="b-comments__item-user__name">bensmithett
+                                                        <p class="b-comments__item-user-name">bensmithett
                                                             <span class="b-comment-time">/ 42 minutes</span>
                                                         </p>
                                                     </div>
-                                                    <p class="b-comments__item-user__text">couldn’t be better :D</p>
+                                                    <p class="b-comments__item-user-text">couldn’t be better :D</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="b-comments__item__border"></div>
+                                        <div class="b-comments__item-border"></div>
                                     </div>
                                 </div>
 
                             <div class="b-comments__item">
                                 <div class="b-comments__item-users">
                                     <div class="b-comments__item-user">
-                                        <div class="b-comments__item-user__content">
-                                            <div class="b-comments__item-user__header">
+                                        <div class="b-comments__item-user-content">
+                                            <div class="b-comments__item-user-header">
                                                 <img src="../src/img/photo-user-comment.png" alt="img">
-                                                <p class="b-comments__item-user__name">justinfrench
+                                                <p class="b-comments__item-user-name">justinfrench
                                                     <span class="b-comment-time">/ 48 minutes</span>
                                                 </p>
                                             </div>
-                                            <p class="b-comments__item-user__text">looks very promising</p>
+                                            <p class="b-comments__item-user-text">looks very promising</p>
                                         </div>
                                     </div>
                                 </div>
