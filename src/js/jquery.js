@@ -29,25 +29,25 @@ $( document ).ready( function() {
 
     // Slider for work.html and blog-post.html
 
-    $('.b-post__main-image__img:first').fadeIn();
+    $('.b-post__slide:first').fadeIn();
     $('.b-rectangle').click( function() {
         $('.b-rectangle').removeClass('b-selected');
         $( this ).addClass('b-selected');
         currIndex = $( this ).index() + 1;
-        $('.b-post__main-image__img').fadeOut( 0 );
-        $( '.b-post__main-image__img:nth-child(' + currIndex + ')' ).fadeIn();
+        $('.b-post__slide').fadeOut( 0 );
+        $( '.b-post__slide:nth-child(' + currIndex + ')' ).fadeIn();
     } );
 
     // Slider for blog.html
 
     $('a.b-preview-slide').click( function() {
-        previewSlide( $( this ).parents('.b-slider').find('.b-slides') );
+        previewSlide( $( this ).parents('.b-gallery-post__slider-wrap').find('.b-slides') );
     } );
 
     // clicking image goes to next slide
 
-    $('a.b-next-slide, .b-slider img').click( function() {
-        nextSlide( $( this ).parents('.b-slider').find('.b-slides') );
+    $('a.b-next-slide, .b-gallery-post__slider-wrap img').click( function() {
+        nextSlide( $( this ).parents('.b-gallery-post__slider-wrap').find('.b-slides') );
     } );
 
     // initialize show
@@ -58,7 +58,7 @@ $( document ).ready( function() {
 
     // show first image
 
-        $('.b-slider').each( function() {
+        $('.b-gallery-post__slider-wrap').each( function() {
             $( this ).find('img:first').fadeIn( 1000 );
         } );
     }
